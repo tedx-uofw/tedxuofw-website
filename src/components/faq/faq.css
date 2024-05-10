@@ -1,0 +1,152 @@
+#faq {
+    background-color: black;
+    /* margin: 0 242.5px; */
+    margin: 0 12.6%;
+}
+
+.faq-header {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 14px;
+    margin-bottom: 120px;
+    color: #FFFAFA;
+}
+
+/* general FAQ section */
+.genFaq {
+    color: #FFFAFA;
+    margin-bottom: 200px;
+}
+
+.genFaq h2 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.dropdown-join-container {
+    display: flex;
+}
+
+.dropdown {
+    border-bottom: 1px solid #A9A9A9;
+    width: 740px;
+    /* width: 39%; */
+
+    /* margin-right: 347px; */
+    margin-right: 18%;
+}
+
+/* gen FAQ accordion */
+.accordion {
+    background-color: transparent;
+    color: #FFFAFA;
+    font-size: 20px;
+    cursor: pointer;
+    /* padding: 24px 18px 24px 0; */
+    padding: 24px .9% 24px 0;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    border-top: 1px solid #A9A9A9;
+}
+
+.accordion:after {
+    content: url('../../assets/downArrow.svg');
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+    transition: transform 0.4s;
+    border-bottom: none;
+}
+  
+.active:after {
+    transform: rotate(-180deg);
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding-left: 52px;
+    background-color: transparent;
+    color: #A9A9A9;
+    font-size: 20px;
+    display: none;
+    overflow: hidden;
+    border-left: 2px solid #FF2B06;
+}
+
+.questions {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+/* Join our team */
+.faq-join {
+    width: 346px;
+    /* width: 19%; */
+    margin-left: auto;
+
+    /* take this out later */
+    margin-bottom: 200px;
+}
+
+.faq-join-descr {
+    border-top: 1px solid #A9A9A9;
+    border-bottom: 1px solid #A9A9A9;
+    /* padding: 24px 0; */
+    margin-bottom: 24px;
+}
+
+.faq-join-descr h3 {
+    color: #FFFAFA;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.faq-join-descr p {
+    color: #A9A9A9;
+    font-weight: 400;
+}
+
+.faq-join-button {
+    float: right;
+}
+
+
+/* Become a Speaker */
+.faq-speaker {
+    /* width: 346px; */
+    width: 19%;
+}
+
+.faq-speaker-descr {
+    border-top: 1px solid #A9A9A9;
+    border-bottom: 1px solid #A9A9A9;
+    /* padding: 24px 0; */
+    margin-bottom: 24px;
+}
+
+.faq-speaker-descr h3 {
+    color: #FFFAFA;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.faq-speaker-descr p {
+    color: #A9A9A9;
+    font-weight: 400;
+}
+
+.faq-speaker-button {
+    display: flex;
+    float: right;
+}
+
+.applyButton {
+    margin-right: 24px;
+}

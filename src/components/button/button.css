@@ -1,0 +1,15 @@
+#buttons button {
+    padding: 12px 24px;
+    background-color: transparent;
+    color: #FFFAFA;
+    border: 1px solid #FFFAFA;
+    font-size: 16px;
+    font-weight: 400;
+    transition: .5s;
+}
+
+#buttons button:hover {
+    background-color: #FFFAFA;
+    color: #101010;
+    transition: .4s;
+}
