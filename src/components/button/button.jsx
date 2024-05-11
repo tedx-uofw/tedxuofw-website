@@ -1,11 +1,11 @@
 import React from 'react';
 import "./button.css";
 
-const Button = ({ title }) => {
+const Button = ({ title, link }) => {
 
   return (
     <div id="buttons">
-        <button>{title}</button>
+        <a href={link}><button>{title}</button></a>
     </div>
 
     // code to call component

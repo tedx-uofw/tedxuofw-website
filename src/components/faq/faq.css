@@ -1,27 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
 #faq {
-    background-color: black;
+    background-color: #101010;
     /* margin: 0 242.5px; */
     margin: 0 12.6%;
+    font-family: "Plus Jakarta Sans";
+}
+
+#faq h2 {
+    font-size: 40px;
+    font-weight: 600;
 }
 
 .faq-header {
-    font-size: 20px;
-    font-weight: 600;
     text-align: center;
     margin-top: 14px;
     margin-bottom: 120px;
     color: #FFFAFA;
 }
 
-/* general FAQ section */
-.genFaq {
+.faq-header h1 {
+    /* font-size: 64px; */
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.question-section {
     color: #FFFAFA;
     margin-bottom: 200px;
 }
 
-.genFaq h2 {
-    font-size: 40px;
-    font-weight: 600;
+.sponsorFaq {
+    margin-bottom: 270px;
 }
 
 .dropdown-join-container {
@@ -30,8 +40,9 @@
 
 .dropdown {
     border-bottom: 1px solid #A9A9A9;
-    width: 740px;
+    /* width: 740px; */
     /* width: 39%; */
+    width: 51%;
 
     /* margin-right: 347px; */
     margin-right: 18%;
@@ -44,38 +55,32 @@
     font-size: 20px;
     cursor: pointer;
     /* padding: 24px 18px 24px 0; */
-    padding: 24px .9% 24px 0;
+    padding: 24px 0;
     width: 100%;
     text-align: left;
     border: none;
     outline: none;
-    transition: 0.4s;
+    /* transition: 0.4s; */
     border-top: 1px solid #A9A9A9;
+    display: flex;
 }
 
-.accordion:after {
-    content: url('../../assets/downArrow.svg');
-    font-size: 13px;
-    color: #777;
-    float: right;
-    margin-left: 5px;
+.arrow {
+    margin: auto 18px;
+    width: 24px;
     transition: transform 0.4s;
-    border-bottom: none;
 }
-  
-.active:after {
+
+.rotate {
     transform: rotate(-180deg);
 }
 
-/* Style the accordion panel. Note: hidden by default */
 .panel {
-    padding-left: 52px;
     background-color: transparent;
     color: #A9A9A9;
     font-size: 20px;
     display: none;
     overflow: hidden;
-    border-left: 2px solid #FF2B06;
 }
 
 .questions {
@@ -83,16 +88,19 @@
     flex-direction: row;
 }
 
+.panel-text {
+    border-left: 2px solid #FF2B06;
+    padding-left: 52px;
+    margin-bottom: 24px;
+}
+
 
 
 /* Join our team */
 .faq-join {
-    width: 346px;
+    width: 347px;
     /* width: 19%; */
     margin-left: auto;
-
-    /* take this out later */
-    margin-bottom: 200px;
 }
 
 .faq-join-descr {
@@ -120,8 +128,9 @@
 
 /* Become a Speaker */
 .faq-speaker {
-    /* width: 346px; */
-    width: 19%;
+    width: 347px;
+    /* width: 19%; */
+    margin-left: auto;
 }
 
 .faq-speaker-descr {
