@@ -22,7 +22,7 @@ const createBox = (props) => {
                     </a>
                 </div>
             </div>        
-            <p className='box-description'>{props.description}</p>
+            <p className='box-description'>{props.description} hello  nydsa</p>
         </div>
     </section>
   )

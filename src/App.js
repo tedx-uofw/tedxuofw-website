@@ -11,7 +11,8 @@ import About from "./components/about/about"
 import Contact from "./components/contact/contact"
 import PastEvents from "./components/past-events/past_events"
 import FAQ from "./components/faq/faq"
-// import Speakers from "./components/speakers/speakers"
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (

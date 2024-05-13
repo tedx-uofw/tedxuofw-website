@@ -1,4 +1,15 @@
+html,
+body,
+#root,
 .App {
-    margin-left: 14.063rem;
-    margin-right: 14.063rem;
+    margin: 0;
+    
+}
+
+.App {
+    background-size: cover;
+    background-color: #101010;
+    color: #FFFAFA;;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
 }
