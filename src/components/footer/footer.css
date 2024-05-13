@@ -1,0 +1,141 @@
+#footer {
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  background: black;
+}
+
+footer {
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1 0 0;
+  background: black;
+}
+
+#top {
+  display: flex;
+  margin: 2rem 7rem;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-wrap: wrap;
+}
+
+#logo {
+  max-width: 15rem;
+  height: auto;
+}
+
+#blurb {
+  font-size: 15px;
+}
+
+#pages {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  color: grey;
+  text-align: center;
+
+  /* Regular 20 */
+  font-family: Poppins;
+  font-style: normal;
+  line-height: normal;
+  margin: 0;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.section a {
+  text-decoration: none;
+  color: var(--White, #FFF);
+
+  /* Regular 20 */
+  font-family: Poppins;
+  font-style: normal;
+  line-height: normal;
+}
+
+#bottom {
+  display: flex;
+  margin: 0rem 7rem 2rem 7rem;
+  justify-content: space-between;
+  align-content: center;
+  align-self: stretch;
+  flex-wrap: wrap;
+}
+
+#copyright {
+  color: var(--White, #FFF);
+
+  /* Regular 20 */
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-size: 20px;
+}
+
+#icons {
+  display: flex;
+  gap: 1rem;
+  margin-right: 0.7rem;
+}
+
+#icons a {
+  display: flex;
+  float: right;
+  align-items: center;
+  background-color: transparent;
+}
+
+#icons a:hover {
+  opacity: 50%;
+}
+
+#pages a:hover {
+  opacity: 50%;
+}
+
+/* Responsive CSS for tablets: */
+@media screen and (max-width: 1024px) {
+  #logo {
+      max-width: 10rem;
+  }
+  #bar {
+      display: none;
+  }
+  #blurb::before {
+      content:"\a";
+      white-space: pre;
+  }
+  #top, #bottom {
+      margin: 2rem 6rem;
+  }
+}
+/* Additional responsive CSS for mobile */
+@media screen and (max-width: 450px) {
+  #top, #bottom {
+      margin: 2rem 2rem;
+  }
+  #copyright {
+      order: 2;
+  }
+  .mobile-only {
+      display: visible;
+      opacity: 50%;
+      margin-bottom: 0;
+  }
+  #blurb {
+      font-size: 0.75rem;
+  }
+}
+@media screen and (min-width: 450px) {
+  .mobile-only {
+      display: none;
+  }
+}
