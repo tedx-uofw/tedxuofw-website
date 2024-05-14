@@ -1,9 +1,9 @@
 import React from 'react'
-import './createBox.css'
+import './CreateBox.css'
 import youtube from '../../assets/social-media/youtube.svg'
 import linkedin from '../../assets/social-media/linkedin.svg'
 
-const createBox = (props) => {
+const CreateBox = (props) => {
   return (
     <section>
         <div className='box-content'>
@@ -28,4 +28,4 @@ const createBox = (props) => {
   )
 }
 
-export default createBox
+export default CreateBox
