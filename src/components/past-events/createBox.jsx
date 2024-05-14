@@ -3,6 +3,8 @@ import './CreateBox.css'
 import youtube from '../../assets/social-media/youtube.svg'
 import linkedin from '../../assets/social-media/linkedin.svg'
 
+/* */
+
 const CreateBox = (props) => {
   return (
     <section>
@@ -21,7 +23,8 @@ const CreateBox = (props) => {
                         <img src={linkedin}/>
                     </a>
                 </div>
-            </div>        
+            </div>
+
             <p className='box-description'>{props.description} hello  nydsa</p>
         </div>
     </section>

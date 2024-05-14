@@ -1,6 +1,8 @@
 import React from 'react'
 import './Contact.css'
 
+/* */
+
 /* Logos */
 import email from '../../assets/social-media/email.svg'
 import facebook from '../../assets/social-media/facebook.svg'
@@ -18,7 +20,7 @@ const Contact = () => {
         <hr></hr>
 
         <div className='form-container'>
-          
+
           <Form />
           <div className='stay-updated-ctr'>
             <h2 className='stay-updated-title'>Stay Updated</h2>
@@ -66,7 +68,7 @@ const Contact = () => {
 
         </div>
 
-        
+
       </div>
     </div>
   )
