@@ -1,5 +1,5 @@
 import React from 'react'
-import './CreateBox.css'
+import './createBox.css'
 import youtube from '../../assets/social-media/youtube.svg'
 import linkedin from '../../assets/social-media/linkedin.svg'
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import './Contact.css'
+import './contact.css'
 
 /* Logos */
 import email from '../../assets/social-media/email.svg'
