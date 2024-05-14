@@ -1,8 +1,6 @@
 import React from 'react'
 import './Contact.css'
 
-/* */
-
 /* Logos */
 import email from '../../assets/social-media/email.svg'
 import facebook from '../../assets/social-media/facebook.svg'

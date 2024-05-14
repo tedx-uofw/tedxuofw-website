@@ -8,7 +8,7 @@ import Footer from './components/footer/footer';
 
 import Landing from "./components/landing"
 import About from "./components/about/about"
-import Contact from "./components/contact/Contact"
+// import Contact from "./components/contact/Contact"
 import PastEvents from "./components/past-events/PastEvents"
 import FAQ from "./components/faq/faq"
 
@@ -24,15 +24,14 @@ function App() {
             <Routes>
               <Route path="/" element ={ <Landing /> } />
               <Route path="/about" element = { <About /> } />
-              <Route path="/contact" element = { <Contact /> } />
+              {/* <Route path="/contact" element = { <Contact /> } /> */}
               <Route path="/past-events" element = { <PastEvents /> } />
               <Route path="/faq" element = { <FAQ /> } />
-              {/* <Route path="/speakers" element = { <Speakers />} /> */}
               <Route path="*" element={<div> 404 Not Found </div>}></Route>
             </Routes>
             <Footer />
           </div>
-        </Router> 
+        </Router>
     </div>
   );
 }
