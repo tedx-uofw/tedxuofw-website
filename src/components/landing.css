@@ -1,0 +1,69 @@
+/* event card needs to be row orientation */
+/* event info needs to be column orientation */
+/* event header needs row orientation */
+
+#landing {
+  font-family: "Plus Jakarta Sans";
+}
+
+.event-card {
+  display: flex;
+  flex-direction: row;
+  width: 91.8125rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.event-card > img {
+  width: 53.06063rem;
+  height: 29.84325rem;
+  flex-shrink: 0;
+}
+
+#event-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+  align-self: flex-start;
+}
+
+#event-title {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-size: 2.5rem;
+}
+
+#event-details {
+  margin-top: 5px;
+  font-weight: lighter;
+  font-size: 1.25rem;
+}
+
+#event-description {
+  font-size: 1.25rem;
+}
+
+#event-description, #event-details, #event-title, #event-info button {
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#event-header {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  font-size: 20px;
+}
+
+#event-info button {
+  padding: 12px 24px;
+  width: 11rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  /* color: #FFFAFA; */
+  text-align: center;
+  font-size: 1rem;
+
+}
