@@ -28,6 +28,16 @@
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function(){
+          emailjs.init({
+            publicKey: "NJ9CgmSswaDJg8Bvt",
+          });
+      })();
+    </script>
     <div id="root"></div>
     <!--
       This HTML file is a template.
