@@ -2,6 +2,8 @@ import React from 'react'
 
 import { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import './Form.css'
+import Button from '../button/button'
 
 
 
@@ -42,40 +44,20 @@ const Form = () => {
     };
   return (
     <div className='form-container'>
-        {/* <form id="contact-form" onSubmit={sendEmail}>
-            <div className="form-group">
-                <label htmlFor="name"></label>
-                <input type="text" className="form-control" value="Name" required/>
-            </div>
-            <div className="form-group">
-                <label htmlFor="exampleInputEmail1"></label>
-                <input type="email" className="form-control" aria-describedby="emailHelp" value="youremailhere@uw.edu" required/>
-            </div>
-            <div className="form-group">
-                <label htmlFor="organization"></label>
-                <input type="text" className="form-control" value="Name of Organization (opt)" />
-            </div>
-            <div className="form-group">
-                <label htmlFor="phoneNumber"></label>
-                <input type="text" className="form-control" value="Your Phone Number (opt)" />
-            </div>
-            <div className="form-group">
-                <label htmlFor="message"></label>
-                <textarea className="form-control" rows="5" value="Reason for contact (questions about TEDxUofW, why you want to become a sponsor, etc)"></textarea>
-            </div>
-            <button type="submit" className="btn btn-primary" disabled={isSubmitting}>Submit</button>
-            {stateMessage && <p>{stateMessage}</p>}
-        </form> */}
-
         <form ref={form} onSubmit={sendEmail}>
-            <label>Name</label>
-            <input type="text" name="user_name" />
-            <label>Email</label>
-            <input type="email" name="user_email" />
-            <label>Message</label>
-            <textarea name="message" />
-            <input type="submit" value="Send" disabled={isSubmitting} />
-            {stateMessage && <p>{stateMessage}</p>}
+            <div className='fields'>
+                <input className='input-fields' type="text" name="user_name" placeholder='Full Name' required/>
+                <input className='input-fields' type="email" name="user_email" placeholder='youremailhere@uw.edu' required/>
+                <input className='input-fields'type="text" name="user_org" placeholder='Name of Organization (opt)' />
+                <input className='input-fields' type="text" name="user_phone" placeholder='Your Phone Number (opt)' />
+                <textarea className='input-fields message-box' name="message" placeholder='Reason for contact (questions about TEDxUofW, why you want to become a sponsor, etc)' required/>
+            </div>
+
+            <div className='submit-btn'>
+                <Button className="contact-btn" title="SUBMIT" type="submit" disabled={isSubmitting} />
+                {stateMessage && <p>{stateMessage}</p>}
+            </div>
+            
             </form>
 
     </div>
