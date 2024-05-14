@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import './PastEvents.css'
 import Dropdown from './DropdownComp'
-import CreateBox from './CreateBox'
+import CreateBox from './createBox'
 
 const PastEvents = () => {
 
@@ -23,8 +23,8 @@ const PastEvents = () => {
         <hr></hr>
         <CreateBox />
       </div>
-      
-      
+
+
     </div>
   )
 }
