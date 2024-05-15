@@ -3,13 +3,13 @@ body,
 #root,
 .App {
     margin: 0;
-    
+    font-family: "Plus Jakarta Sans";
 }
 
 .App {
     background-size: cover;
     background-color: #101010;
     color: #FFFAFA;;
-    padding-left: 3.5rem;
-    padding-right: 3.5rem;
+    padding-left: 14.063rem;
+    padding-right: 14.063rem;
 }

@@ -1,6 +1,7 @@
 .past-events-container {
   display: flex;
   flex-direction: column;
+  gap: 12px;
 }
 
 .past-events-title {
@@ -9,4 +10,23 @@
   justify-content: space-between;
   align-items: center;
   align-self: stretch;
+}
+
+.past-events-hr {
+  padding-bottom: 3.75rem;
+}
+
+.boxes-ctr {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.events-heading {
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
