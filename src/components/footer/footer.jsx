@@ -1,38 +1,44 @@
 import React from 'react'
 import './footer.css'
-import logo from './assets/Logo.png'
-import email from "./assets/Email.svg";
-import facebook from "./assets/Facebook.svg";
-import instagram from "./assets/Instagram.svg";
-import linkedin from "./assets/LinkedIn.svg";
-import tiktok from "./assets/Tiktok.svg";
+import logo from '../../assets/logo.png'
+import email from "../../assets/social-media/email.svg";
+import facebook from "../../assets/social-media/facebook.svg";
+import instagram from "../../assets/social-media/instagram.svg";
+import linkedin from "../../assets/social-media/linkedin.svg";
+import tiktok from "../../assets/social-media/tiktok.svg";
 
 const footer = () => {
   return (
 <div id="footer">
-        <footer>
-          {/* 1st half of footer */}
-          <div id="top">
+        <footer class = "row">
+          {/* Right half of footer */}
+          <div id="left" class = "col">
             {/* Logo */}
             <div class="section">
               <a href=""><img src={logo} alt="Logo of TEDxUofW" id="logo" hfref="/"></img></a>
             </div>
 
-            {/* Sitemap */}
-            <div id="pages">
+             {/* Copyright */}
+             <p id="copyright">©TEDxUofW 2024 | Crossroads <span id="bar">|</span> <span id="blurb">This independent TEDx event is operated under license from TED.</span></p>
+             </div>
+
+          {/* left half of footer */}
+          <div id="right" class ="col">        
+              {/* Sitemap */}
+              <div id="pages">
               <div class="section">
-                <a href="past-events">PAST EVENTS</a>
-                <a href="/about">ABOUT</a>
-                <a href="/faq">FAQ</a>
-                <a href="/contact">CONTACT US</a>
+                <div className="row">
+                  <div class="col">
+                    <a href="past-events">ABOUT</a>
+                    <a href="/about">PAST EVENTS</a>
+                  </div>
+                  <div class="col">
+                    <a href="/faq">FAQ</a>
+                    <a href="/contact">CONTACT US</a>
+                  </div>                  
+                </div>
               </div>
             </div>
-          </div>
-
-          {/* 2nd half of footer */}
-          <div id="bottom">
-            {/* Copyright */}
-            <p id="copyright">©TEDxUofW 2024 | Crossroads <span id="bar">|</span> <span id="blurb">This independent TEDx event is operated under license from TED.</span></p>
             {/* Logos */}
               <div class="mobile-only"><p>CONNECT WITH US:</p></div>
             <div id="icons">

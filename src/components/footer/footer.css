@@ -1,28 +1,37 @@
 #footer {
   display: flex;
-  position: relative;
+  justify-content: space-between;
   align-items: flex-start;
-  background: black;
+  padding: 2rem 0rem 2rem 0rem;
 }
 
 footer {
-  flex-direction: column;
-  align-items: flex-start;
-  flex: 1 0 0;
-  background: black;
+  background: linear-gradient(0deg, #101010 -10.3%, rgba(16, 16, 16, 0.00) 80.52%);
+  mix-blend-mode: hard-light;
 }
 
-#top {
+#left {
   display: flex;
-  margin: 2rem 7rem;
-  justify-content: space-between;
-  align-self: stretch;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 2rem; /* Adjust the gap as needed */
+  align-self: flex-start; /* Aligns to the start (left) */
+  flex-wrap: wrap;
+}
+
+#right {
+  display: flex;
+  align-items: flex-end;
+  align-content: flex-end;
+  gap: 2rem;
+  align-self: flex-end;
   flex-wrap: wrap;
 }
 
 #logo {
-  max-width: 15rem;
-  height: auto;
+  width: 351.495px;
+  height: 89.33px;
+  flex-shrink: 0;
 }
 
 #blurb {
@@ -31,16 +40,44 @@ footer {
 
 #pages {
   display: flex;
-  align-items: flex-start;
-  gap: 2rem;
-  color: grey;
-  text-align: center;
+  align-items: flex-end;
+  align-content: flex-end;
+  flex-wrap: wrap;
 
   /* Regular 20 */
   font-family: Poppins;
   font-style: normal;
   line-height: normal;
   margin: 0;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+}
+
+#pages a {
+  display: flex;
+  padding: 10px;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 10px;
+
+  color: #FFFAFA;
+  text-align: end;
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .section {
@@ -60,24 +97,13 @@ footer {
   line-height: normal;
 }
 
-#bottom {
-  display: flex;
-  margin: 0rem 7rem 2rem 7rem;
-  justify-content: space-between;
-  align-content: center;
-  align-self: stretch;
-  flex-wrap: wrap;
-}
-
 #copyright {
-  color: var(--White, #FFF);
-
-  /* Regular 20 */
-  font-family: Poppins;
+  color: #FFFAFA;
+  font-family: "Plus Jakarta Sans";
+  font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  font-size: 20px;
 }
 
 #icons {
@@ -113,15 +139,9 @@ footer {
       content:"\a";
       white-space: pre;
   }
-  #top, #bottom {
-      margin: 2rem 6rem;
-  }
 }
 /* Additional responsive CSS for mobile */
 @media screen and (max-width: 450px) {
-  #top, #bottom {
-      margin: 2rem 2rem;
-  }
   #copyright {
       order: 2;
   }
