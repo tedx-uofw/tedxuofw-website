@@ -70,9 +70,13 @@
 }
 
 .arrow {
-    margin: auto 18px auto auto;
+    margin-left: 18px;
     width: 24px;
     transition: transform 0.4s;
+}
+
+.arrowContainer {
+    margin: auto 18px auto auto;
 }
 
 .rotate {
