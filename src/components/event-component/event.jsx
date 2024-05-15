@@ -10,8 +10,9 @@ import Button from '../button/button'
    * @param {String} details event specific details ie date, time, location
    * @param {String} description description of event
    * @param {String} image path to event related image
+   * @param {String} eventLink link for button
    */
-const Event = ({title, name, details, description, image}) => {
+const Event = ({title, name, details, description, image, eventLink}) => {
 
   return (
     <div id="event-card">
@@ -27,7 +28,7 @@ const Event = ({title, name, details, description, image}) => {
           <p id='event-description'>{description}</p>
           <Button
             title='VIEW WEBSITE'
-            link=''
+            link={eventLink}
           />
         </section>
     </div>

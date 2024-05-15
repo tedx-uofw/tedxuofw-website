@@ -23,7 +23,7 @@ const footer = () => {
              </div>
 
           {/* left half of footer */}
-          <div id="right" class ="col">        
+          <div id="right" class ="col">
               {/* Sitemap */}
               <div id="pages">
               <div class="section">
@@ -35,7 +35,7 @@ const footer = () => {
                   <div class="col">
                     <a href="/faq">FAQ</a>
                     <a href="/contact">CONTACT US</a>
-                  </div>                  
+                  </div>
                 </div>
               </div>
             </div>

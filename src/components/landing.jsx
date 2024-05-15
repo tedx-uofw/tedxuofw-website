@@ -72,6 +72,7 @@ const landing = () => {
               just want to sleep but i have so much work to do rahhhhhhhh also the image will probably
               hold the conference promo or branding somewhere'
             image={upcomingEvent1}
+            eventLink=''
           />
         </div>
 

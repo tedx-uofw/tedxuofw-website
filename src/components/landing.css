@@ -4,12 +4,21 @@
   landing about = column orientation
 
   */
+
+/* body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+} */
+
 #landing {
   color: #FFFAFA;
   font-family: "Plus Jakarta Sans";
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
+  /* width: 100vw; 100% of the viewport width */
+  /* height: 100vh; */
 }
 
 #tedx-intro {
