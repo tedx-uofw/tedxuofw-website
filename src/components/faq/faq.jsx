@@ -90,7 +90,7 @@ const Faq = () => {
       <div className="speakerFaq question-section" id="speakerFaq">
         <h2>Speaker FAQ</h2>
         <div className="dropdown-join-container">
-          <div className="dropdown">
+          <div className="dropdown-ctr">
             <button className={`accordion ${activeIndex === 5 ? 'active' : ''}`} onClick={() => togglePanel(5)}>How do I become a speaker?<img src={downArrow} alt="down arrow img" className={`arrow ${activeIndex === 5 ? 'rotate' : ''}`} /></button>
             <div className="panel" style={{ display: activeIndex === 5 ? 'block' : 'none' }}>
               <div className="panel-text">
@@ -191,7 +191,7 @@ const Faq = () => {
       <div className="sponsorFaq question-section" id="sponsorFaq">
         <h2>Sponsor FAQ</h2>
         <div className="dropdown-join-container">
-          <div className="dropdown">
+          <div className="dropdown-ctr">
             <button className={`accordion ${activeIndex === 14 ? 'active' : ''}`} onClick={() => togglePanel(14)}>I’d like to provide support or sponsor the event.<img src={downArrow} alt="down arrow img" className={`arrow ${activeIndex === 14 ? 'rotate' : ''}`} /></button>
             <div className="panel" style={{ display: activeIndex === 14 ? 'block' : 'none' }}>
               <div className="panel-text">
