@@ -1,0 +1,41 @@
+#header {
+  color: #FFFAFA;
+  text-align: center;
+  font-family: "Plus Jakarta Sans";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.location, .buttons {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+#about #logo {
+  height: 7rem;
+  width: auto;
+}
+
+#tedxuofw {
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+
+/* .about-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.about-col {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+} */
