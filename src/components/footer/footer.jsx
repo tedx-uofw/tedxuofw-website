@@ -29,8 +29,8 @@ const footer = () => {
               <div class="section">
                 <div className="row">
                   <div class="col">
-                    <a href="past-events">ABOUT</a>
-                    <a href="/about">PAST EVENTS</a>
+                    <a href="/about">ABOUT</a>
+                    <a href="/past-events">PAST EVENTS</a>
                   </div>
                   <div class="col">
                     <a href="/faq">FAQ</a>
