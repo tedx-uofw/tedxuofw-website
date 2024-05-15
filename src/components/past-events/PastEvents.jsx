@@ -1,9 +1,10 @@
-import React from 'react'
-import './past_events.css'
-import Dropdown from './dropdown'
+import React, { useEffect } from 'react'
+import './pastEvents.css'
+import Dropdown from './DropdownComp'
 import CreateBox from './createBox'
 
-const past_events = () => {
+const PastEvents = () => {
+
   return (
     <div className='past-events-container'>
       <div className='past-events-title'>
@@ -22,10 +23,10 @@ const past_events = () => {
         <hr></hr>
         <CreateBox />
       </div>
-      
-      
+
+
     </div>
   )
 }
 
-export default past_events
+export default PastEvents

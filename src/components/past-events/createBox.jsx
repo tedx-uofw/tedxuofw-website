@@ -3,7 +3,9 @@ import './createBox.css'
 import youtube from '../../assets/social-media/youtube.svg'
 import linkedin from '../../assets/social-media/linkedin.svg'
 
-const createBox = (props) => {
+/* */
+
+const CreateBox = (props) => {
   return (
     <section>
         <div className='box-content'>
@@ -21,11 +23,12 @@ const createBox = (props) => {
                         <img src={linkedin}/>
                     </a>
                 </div>
-            </div>        
+            </div>
+
             <p className='box-description'>{props.description} hello  nydsa</p>
         </div>
     </section>
   )
 }
 
-export default createBox
+export default CreateBox

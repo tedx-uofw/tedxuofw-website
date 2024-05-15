@@ -1,0 +1,10 @@
+<svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="EmailComp" clip-path="url(#clip0_839_4361)">
+<path id="Vector" d="M32 5.6875C32 3.7625 30.56 2.1875 28.8 2.1875H3.2C1.44 2.1875 0 3.7625 0 5.6875V26.6875C0 28.6125 1.44 30.1875 3.2 30.1875H28.8C30.56 30.1875 32 28.6125 32 26.6875V5.6875ZM28.8 5.6875L16 14.4375L3.2 5.6875H28.8ZM28.8 26.6875H3.2V9.1875L16 17.9375L28.8 9.1875V26.6875Z" fill="#FFFAFA"/>
+</g>
+<defs>
+<clipPath id="clip0_839_4361">
+<rect width="32" height="32" fill="white" transform="translate(0 0.1875)"/>
+</clipPath>
+</defs>
+</svg>

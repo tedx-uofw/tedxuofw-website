@@ -1,0 +1,37 @@
+/* widths and heighs are halved rn */
+
+.form-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.fields {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.input-fields {
+    display: flex;
+    flex-direction: column;
+    width: 23.5rem;
+    padding: 1.5rem 2.25rem;
+    align-items: center;
+    gap: 0.75rem;
+    align-self: stretch;
+
+    border-radius: 0.5rem;
+    background: rgba(53, 53, 53, 0.60);
+    backdrop-filter: blur(1.578rem);
+}
+
+.message-box {
+    height: 9.375rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: flex-end;
+}

@@ -27,7 +27,7 @@ const Faq = () => {
             <div className="panel" style={{ display: activeIndex === 0 ? 'block' : 'none' }}>
               <div className="panel-text">
                 <p>You can follow our <a href="https://www.instagram.com/tedxuofw/?hl=en">Instagram</a> for regular updates and check out our upcoming 
-                events on the <a href="">home page</a>. Our annual conference is held in the spring (April-May) on
+                events on the <a href="/">home page</a>. Our annual conference is held in the spring (April-May) on
                 the campus of the University of Washington.</p>
               </div>
             </div>
@@ -36,7 +36,7 @@ const Faq = () => {
             <div className="panel" style={{ display: activeIndex === 1 ? 'block' : 'none' }}>
               <div className="panel-text">
                 <p>Thank you for your interest in helping out! TEDxUofW wouldn’t exist without the 
-                contributions volunteers make at our events. Please <a href="">contact us</a> a month prior to the 
+                contributions volunteers make at our events. Please <a href="/contact">contact us</a> a month prior to the 
                 event! We look forward to seeing you!</p>
               </div>            
             </div>
@@ -46,7 +46,7 @@ const Faq = () => {
               <div className="panel-text">
                 <p>Yes, our events are open to everyone! However, tickets must be purchased, which 
                 can be done on our website prior to the event or on the day of the event. If you're 
-                passionate about attending but can't afford the price, please <a href="">contact us</a>!</p>
+                passionate about attending but can't afford the price, please <a href="/contact">contact us</a>!</p>
               </div>            
             </div>
 
@@ -63,7 +63,7 @@ const Faq = () => {
             <div className="panel" style={{ display: activeIndex === 4 ? 'block' : 'none' }}>
               <div className="panel-text">
                 <p>Please check out our <a href="#speakerFaq">Speaker FAQ</a> and <a href="#sponsorFaq">Sponsor FAQ</a> for more information about 
-                those areas. If you can’t find your answer on those pages, please don’t hesitate to <a href="">contact us</a>!</p>
+                those areas. If you can’t find your answer on those pages, please don’t hesitate to <a href="/contact">contact us</a>!</p>
               </div>            
             </div>
           </div>
