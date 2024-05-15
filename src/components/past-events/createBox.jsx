@@ -8,7 +8,7 @@ import linkedin from '../../assets/social-media/linkedin.svg'
 const CreateBox = (props) => {
     console.log(props)
   return (
-    <section>
+    <section id='create-box'>
         <div className='box-content'>
             <img className='box-img' src={props.img} alt={props.name}/>
             <div className='title-content'>
