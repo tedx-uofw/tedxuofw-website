@@ -6,6 +6,7 @@ import linkedin from '../../assets/social-media/linkedin.svg'
 /* */
 
 const CreateBox = (props) => {
+    console.log(props)
   return (
     <section>
         <div className='box-content'>
@@ -16,16 +17,16 @@ const CreateBox = (props) => {
                     <p className='name-content'>{props.title}</p>
                 </div>
                 <div className='socials-box'>
-                    <a href={props.youtubeLink} className='social-link'>
+                    <a target='_blank' href={props.youtubeLink} className='social-link'>
                         <img src={youtube}/>
                     </a>
-                    <a href={props.linkedinLink} className='social-link'>
+                    <a target='_blank' href={props.linkedinLink} className='social-link'>
                         <img src={linkedin}/>
                     </a>
                 </div>
             </div>
 
-            <p className='box-description'>{props.description} hello  nydsa</p>
+            <p className='box-description'>{props.description}</p>
         </div>
     </section>
   )

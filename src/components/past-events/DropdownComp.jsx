@@ -1,19 +1,26 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './DropdownComp.css'
 import Dropdown from 'react-bootstrap/Dropdown'
 
 
-const DropdownComp = () => {
+const DropdownComp = ({ items, onSelect }) => {
+  const [selected, setSelected] = useState(items.length > 0 ? items[0].id : [])
+
+  const handleSelect = (event) => {
+    setSelected(event);
+    onSelect(event);
+  }
+
   return (
-    <Dropdown>
+    <Dropdown onSelect={(e) => handleSelect(e)}>
       <Dropdown.Toggle variant="success" id="dropdown-basic">
-        View more???
+        {selected != null ? selected : "View More"}
       </Dropdown.Toggle>
 
       <Dropdown.Menu>
-        <Dropdown.Item href="#/action-1">CROSSROADS 2024</Dropdown.Item>
-        <Dropdown.Item href="#/action-2">SEEING THE INVISIBLE 2023</Dropdown.Item>
-        <Dropdown.Item href="#/action-3">DO YOU HAVE A MINUTE 2022</Dropdown.Item>
+        {items.map((item, idx) => (
+          <Dropdown.Item key={idx} eventKey={item.id}>{item.id}</Dropdown.Item>
+        ))}
       </Dropdown.Menu>
     </Dropdown>
   )
