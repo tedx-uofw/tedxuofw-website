@@ -1,10 +1,10 @@
 #event-card {
   display: flex;
   flex-direction: row;
-  width: 91.8125rem;
-  /* justify-content: space-between; */
+  width: 1469px;
   align-items: center;
   font-family: "Plus Jakarta Sans";
+  align-self: center;
 }
 
 .event-card > img {

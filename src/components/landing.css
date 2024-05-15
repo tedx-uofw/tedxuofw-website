@@ -1,0 +1,167 @@
+/* tedx intro = column
+  add bg to tedx intro
+  intro bottom row orientation
+  landing about = column orientation
+
+  */
+#landing {
+  color: #FFFAFA;
+  font-family: "Plus Jakarta Sans";
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+}
+
+#tedx-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-self: center;
+  background: url('../assets/landingBg.png');
+  mix-blend-mode: exclusion;
+  height: 1156px;
+}
+
+#intro-bottom {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 36px;
+}
+
+#landing-about {
+  display: flex;
+  flex-direction: column;
+  width: 619px;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+#intro-bottom img {
+  width: 812px;
+  height: 154px;
+}
+
+#tedx-intro h1 {
+  font-size: 64px;
+}
+
+#landing-about p {
+  font-size: 18px;
+}
+
+#tedx-intro h1, #landing-about p, .video-info-pair p, #team-card-right p {
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#down-arrow {
+  width: 55px;
+  height: 27px;
+  align-self: center;
+}
+
+#landing-content {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 200px;
+  margin-top: 57px;
+  margin-bottom: 200px;
+}
+
+#landing-content h1 {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+#upcoming-events, #impact, #highlighted-talks, #join-our-team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+#impact-numbers {
+  display: flex;
+  align-items: flex-start;
+  gap: 180px;
+}
+
+.impact-number-pair {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
+}
+
+.impact-number-pair h2, p {
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.impact-number-pair h2 {
+  font-size: 64px;
+}
+
+.impact-number-pair p {
+  font-size: 16px;
+  text-align: center;
+}
+
+#lives-impacted h2 {
+  color: #FF2B06;
+}
+
+#talk-videos {
+  display: flex;
+  height: 372.955px;
+  align-items: flex-start;
+  gap: 44px;
+}
+
+.video-info-pair p {
+  font-size: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.video-info-pair {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+#talk-videos iframe {
+  width: 460px;
+  height: 292.257px;
+}
+
+#team-card {
+  display: flex;
+  width: 1470px;
+  align-items: center;
+  gap: 40px;
+}
+
+#team-card img {
+  width: 1024.693px;
+  height: 549.618px;
+}
+
+
+#team-card-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+#team-card-right p {
+  font-size: 24px;
+}
