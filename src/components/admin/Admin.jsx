@@ -9,6 +9,7 @@ const Admin = () => {
   const [selected, setSelected] = useState('');
   const [newSpeaker, setNewSpeaker] = useState({ name: '', title: '', description: '', imgUrl: '', linkedinUrl: '', youtubeUrl: '' });
   const [newPerformer, setNewPerformer] = useState({ name: '', title: '', description: '', imgUrl: '', linkedinUrl: '', youtubeUrl: '' });
+  const [newEvent, setNewEvent] = useState({ title: '', name: '', details: '', description: '', imgUrl: '', link: ''});
 
   const fetchItems = async () => {
     const data = await getDocs(collection(db, "past-events"));
@@ -30,8 +31,10 @@ const Admin = () => {
     const { name, value } = e.target;
     if (type === 'speaker') {
       setNewSpeaker(prev => ({ ...prev, [name]: value }));
-    } else {
+    } else if (type == 'performer'){
       setNewPerformer(prev => ({ ...prev, [name]: value }));
+    } else {
+      setNewEvent(prev => ({ ...prev, [name]: value }));
     }
   };
 
@@ -61,6 +64,19 @@ const Admin = () => {
     }
   };
 
+  const addEvent = async () => {
+    const selectedDocRef = doc(db, 'past-events', selected);
+    try {
+      await updateDoc(selectedDocRef, {
+        event: arrayUnion(newEvent)
+      });
+      alert('Event added successfully!');
+      setNewEvent({ title: '', name: '', details: '', description: '', imgUrl: '', link: ''}); // Reset the event form
+    } catch (error) {
+      console.error("Error adding event: ", error);
+    }
+  };
+
 
   return (
     <div>
@@ -84,6 +100,17 @@ const Admin = () => {
         <input name="linkedinUrl" value={newPerformer.linkedinUrl} onChange={(e) => handleInputChange(e, 'performer')} placeholder="LinkedIn URL" />
         <input name="youtubeUrl" value={newPerformer.youtubeUrl} onChange={(e) => handleInputChange(e, 'performer')} placeholder="YouTube URL" />
         <button onClick={addPerformer}>Add Performer</button>
+      </div>
+
+      <div>
+        <h2>Add New Event</h2>
+        <input name="title" value={newEvent.title} onChange={(e) => handleInputChange(e, 'event')} placeholder="Title" />
+        <input name="name" value={newEvent.name} onChange={(e) => handleInputChange(e, 'event')} placeholder="Name" />
+        <input name="details" value={newEvent.details} onChange={(e) => handleInputChange(e, 'event')} placeholder="Details" />
+        <input name="description" value={newEvent.description} onChange={(e) => handleInputChange(e, 'event')} placeholder="Description" />
+        <input name="imgURl" value={newEvent.imgUrl} onChange={(e) => handleInputChange(e, 'event')} placeholder="Image URL" />
+        <input name="link" value={newEvent.link} onChange={(e) => handleInputChange(e, 'event')} placeholder="Website URL" />
+        <button onClick={addEvent}>Add Event</button>
       </div>
     </div>
   );
