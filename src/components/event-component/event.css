@@ -61,16 +61,3 @@
   margin-top: auto;
   margin-bottom: auto;
 }
-
-#event-info button {
-  padding: 12px 24px;
-  width: 11rem;
-  justify-content: center;
-  align-items: center;
-  gap: 0.625rem;
-  text-align: center;
-  font-size: 1rem;
-  background: #101010;
-  border-color: #FFFAFA;
-  margin-top: 10px;
-}

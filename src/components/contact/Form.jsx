@@ -57,7 +57,7 @@ const Form = () => {
                 <Button className="contact-btn" title="SUBMIT" type="submit" disabled={isSubmitting} />
                 {stateMessage && <p>{stateMessage}</p>}
             </div>
-            
+
             </form>
 
     </div>

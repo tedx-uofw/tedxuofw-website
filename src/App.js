@@ -5,11 +5,10 @@ import { Helmet } from 'react-helmet';
 
 import Navbar from './components/navbar/navbar';
 import Footer from './components/footer/footer';
-
 import Landing from "./components/landing"
 import About from "./components/about/about"
 import Contact from "./components/contact/contact"
-import PastEvents from "./components/past-events/pastEvents"
+import PastEvents from "./components/past-events/PastEvents"
 import FAQ from "./components/faq/faq"
 
 import 'bootstrap/dist/css/bootstrap.min.css';

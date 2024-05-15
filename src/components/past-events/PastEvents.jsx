@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import './pastEvents.css'
+import './PastEvents.css'
 import Dropdown from './DropdownComp'
 import CreateBox from './createBox'
 

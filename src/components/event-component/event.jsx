@@ -1,6 +1,7 @@
 import React from 'react';
 import "./event.css";
 import icon from '../../assets/upcomingIcon.svg';
+import Button from '../button/button'
 
 /**
    * Creates event component which includes a picture of the event, event details, title, and a description
@@ -24,7 +25,10 @@ const Event = ({title, name, details, description, image}) => {
           <h2 id='event-details'>{details}</h2>
           <hr id='event-hr' width="100%" size="4"></hr>
           <p id='event-description'>{description}</p>
-          <button id='event-website'>VIEW WEBSITE</button>
+          <Button
+            title='VIEW WEBSITE'
+            link=''
+          />
         </section>
     </div>
   );
