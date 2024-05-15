@@ -4,7 +4,6 @@ import './PastEvents.css'
 import Dropdown from './DropdownComp'
 import CreateBox from './createBox'
 import Event from '../event-component/event'
-import UpcomingEvent from '../../assets/upcomingEvent1.png'
 
 import { getDocs, collection } from 'firebase/firestore'
 import { db } from '../../firebase'
@@ -42,7 +41,7 @@ const PastEvents = () => {
         </div>
         <hr className='past-events-hr'></hr>
           {selectedYear?.event?.map((event) => (
-            <Event title={event.title} name={event.name} details={event.details} description={event.description} image={event.imgUrl} link={event.link} />
+            <Event title={event.title} name={event.name} details={event.details} description={event.description} image={event.imgUrl} eventLink={event.link} />
           ))}
       </div>
 

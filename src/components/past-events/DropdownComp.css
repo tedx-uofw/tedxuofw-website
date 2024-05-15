@@ -1,0 +1,19 @@
+#dropdown-basic {
+    display: flex;
+    /* width: 330px; */
+    padding: 12px 36px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #101010;;
+    border-radius: 0;
+    border: 1px solid #FFE9E9;
+    
+    color: #FFF;
+    text-align: center;
+    font-family: "Plus Jakarta Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
