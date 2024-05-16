@@ -10,12 +10,12 @@ import tiktok from "../../assets/social-media/tiktok.svg";
 const footer = () => {
   return (
 <div id="footer">
-        <footer class = "row">
+        <footer class="row">
           {/* Right half of footer */}
-          <div id="left" class = "col">
+          <div id="left" class="col">
             {/* Logo */}
             <div class="section">
-              <a href=""><img src={logo} alt="Logo of TEDxUofW" id="logo" hfref="/"></img></a>
+              <a href=""><img src={logo} alt="Logo of TEDxUofW" id="logo" href=""></img></a>
             </div>
 
              {/* Copyright */}

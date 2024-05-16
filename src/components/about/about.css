@@ -6,9 +6,23 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  padding-bottom: 7.5rem;
 }
 
-.location, .buttons {
+.location {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  align-self: stretch;
+  color: #A9A9A9;
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.buttons {
   display: flex;
   align-items: flex-start;
   gap: 40px;
@@ -19,7 +33,7 @@
   width: auto;
 }
 
-#tedxuofw {
+#tedxuofw, #ro {
   display: flex;
   gap: 24px;
   justify-content: space-between;
@@ -27,15 +41,24 @@
   align-self: stretch;
 }
 
-/* .about-row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-.about-col {
+#tedx, #ted {
   display: flex;
   flex-direction: column;
-  flex-basis: 100%;
-} */
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+  display: flex;
+  padding-top: 12.5rem;
+}
+#ro {
+  padding-top: 12.5rem;
+}
+
+.white {
+  color: white;
+}
+
+.about-row {
+  display: flex;
+  gap: 200px;
+}

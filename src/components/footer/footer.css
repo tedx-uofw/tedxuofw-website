@@ -3,9 +3,6 @@
   justify-content: space-between;
   align-items: flex-start;
   padding: 2rem 0rem 2rem 0rem;
-}
-
-footer {
   background: linear-gradient(0deg, #101010 -10.3%, rgba(16, 16, 16, 0.00) 80.52%);
   mix-blend-mode: hard-light;
 }
