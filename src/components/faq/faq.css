@@ -58,13 +58,12 @@
     color: #FFFAFA;
     font-size: 20px;
     cursor: pointer;
-    /* padding: 24px 18px 24px 0; */
     padding: 24px 0;
     width: 100%;
     text-align: left;
     border: none;
     outline: none;
-    /* transition: 0.4s; */
+    transition: 0.4s;
     border-top: 1px solid #A9A9A9;
     display: flex;
 }
@@ -89,6 +88,33 @@
     font-size: 20px;
     display: none;
     overflow: hidden;
+    animation: expandPanel 2.5s ease-out forwards;
+}
+
+/* .panel.minimize {
+    animation: minimizePanel 2.5s ease-out forwards;
+} */
+
+.minimize {
+    animation: minimizePanel 2.5s ease-out forwards;
+}
+
+@keyframes expandPanel {
+    from {
+        max-height: 0;
+    }
+    to {
+        max-height: 1000px;
+    }
+}
+
+@keyframes minimizePanel {
+    from {
+        max-height: 1000px;
+    }
+    to {
+        max-height: 0;
+    }
 }
 
 .panel-text a {
@@ -111,7 +137,6 @@
 }
 
 
-
 /* Join our team */
 .faq-join {
     width: 347px;
@@ -127,7 +152,6 @@
     padding-top: 24px;
     padding-bottom: 12px;
     margin-bottom: 24px;
-
 }
 
 .faq-join-descr h3 {
