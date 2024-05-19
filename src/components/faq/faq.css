@@ -52,7 +52,7 @@
     margin-bottom: auto;
 }
 
-/* gen FAQ accordion */
+/* FAQ accordion */
 .accordion {
     background-color: transparent;
     color: #FFFAFA;
@@ -83,38 +83,15 @@
 }
 
 .panel {
-    background-color: transparent;
     color: #A9A9A9;
     font-size: 20px;
-    display: none;
+    max-height: 0;
     overflow: hidden;
-    animation: expandPanel 2.5s ease-out forwards;
+    transition: max-height 0.4s ease-out;
 }
 
-/* .panel.minimize {
-    animation: minimizePanel 2.5s ease-out forwards;
-} */
-
-.minimize {
-    animation: minimizePanel 2.5s ease-out forwards;
-}
-
-@keyframes expandPanel {
-    from {
-        max-height: 0;
-    }
-    to {
-        max-height: 1000px;
-    }
-}
-
-@keyframes minimizePanel {
-    from {
-        max-height: 1000px;
-    }
-    to {
-        max-height: 0;
-    }
+.panel-text {
+    margin-right: 18px;
 }
 
 .panel-text a {
