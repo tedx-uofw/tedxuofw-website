@@ -1,0 +1,42 @@
+#navbar {
+  display: flex;
+  flex-direction: row;
+  width: 88%;
+  padding: 5rem 6.25rem 10rem 6.25rem;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(180deg, #101010 27.24%, rgba(16, 16, 16, 0.00) 87.15%);
+  position: fixed;
+  overflow: hidden;
+  transition: top 0.3s;
+  z-index: 2;
+}
+
+#nav-left img {
+  width: 12.32706rem;
+  height: 2.74706rem;
+  flex-shrink: 0;
+}
+
+#nav-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3.75rem;
+}
+
+#nav-right a {
+  color: #FFFAFA;
+  text-align: center;
+  font-family: "Plus Jakarta Sans";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+}
+
+#nav-right a:hover {
+  color: #FF2B06;
+  transition: 0.5s;
+}
