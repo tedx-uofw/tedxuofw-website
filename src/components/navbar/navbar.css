@@ -11,7 +11,7 @@
 
 #nav-content {
   display: flex;
-  width: 120rem;   /*could change to 80%*/
+  width: 100%;   /*could change to 80%*/
   padding: 5rem 6.25rem 10rem 6.25rem;
   justify-content: space-between;
   /* align-items: flex-start; */
@@ -19,7 +19,7 @@
 
 #nav-left img {
   width: 12.32706rem;
-  height: 2.74706rem;
+  height: 3rem;
   flex-shrink: 0;
 }
 
