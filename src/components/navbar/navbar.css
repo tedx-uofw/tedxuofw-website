@@ -1,15 +1,20 @@
 #navbar {
+  width: 100vw;
   display: flex;
-  flex-direction: row;
-  width: 88%;
-  padding: 5rem 6.25rem 10rem 6.25rem;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
   background: linear-gradient(180deg, #101010 27.24%, rgba(16, 16, 16, 0.00) 87.15%);
   position: fixed;
   overflow: hidden;
   transition: top 0.3s;
   z-index: 2;
+}
+
+#nav-content {
+  display: flex;
+  width: 120rem;   /*could change to 80%*/
+  padding: 5rem 6.25rem 10rem 6.25rem;
+  justify-content: space-between;
+  /* align-items: flex-start; */
 }
 
 #nav-left img {

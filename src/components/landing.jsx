@@ -20,7 +20,7 @@ const landing = () => {
     <div id='landing'>
 
       <div id='tedx-intro'>
-        <div>
+        <div id='intro-top'>
         <h1>WE ARE</h1>
           <div id='intro-bottom'>
             <img src={logo} alt='tedx-logo'/>

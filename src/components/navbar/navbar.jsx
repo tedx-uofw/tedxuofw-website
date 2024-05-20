@@ -42,6 +42,7 @@ const navbar = () => {
 
   return (
     <div id='navbar'>
+      <div id='nav-content'>
       <div id='nav-left'>
         {/* add logo + link to home*/}
         <a href='./'><img src={logo} alt='tedx-logo'/></a>
@@ -55,6 +56,7 @@ const navbar = () => {
             title='BUY TICKETS'
             link=''
         />
+      </div>
       </div>
     </div>
   )
