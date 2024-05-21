@@ -92,6 +92,9 @@
 
 .panel-text {
     margin-right: 18px;
+    border-left: 2px solid #FF2B06;
+    padding-left: 52px;
+    margin-bottom: 24px;
 }
 
 .panel-text a {
@@ -100,17 +103,6 @@
 
 .panel-text p {
     font-weight: 400;
-}
-
-.questions {
-    display: flex;
-    flex-direction: row;
-}
-
-.panel-text {
-    border-left: 2px solid #FF2B06;
-    padding-left: 52px;
-    margin-bottom: 24px;
 }
 
 
@@ -133,12 +125,14 @@
 
 .faq-join-descr h3 {
     color: #FFFAFA;
+    font-size: 24px;
     font-weight: 500;
     margin-bottom: 20px;
 }
 
 .faq-join-descr p {
     color: #A9A9A9;
+    font-size: 20px;
     font-weight: 400;
 }
 
@@ -156,8 +150,7 @@
 }
 
 .faq-speaker-descr {
-    border-top: 1px solid #A9A9A9;
-    border-bottom: 1px solid #A9A9A9;
+    border: none;
     /* padding: 24px 0; */
     padding-top: 24px;
     padding-bottom: 12px;
@@ -166,12 +159,14 @@
 
 .faq-speaker-descr h3 {
     color: #FFFAFA;
+    font-size: 24px;
     font-weight: 500;
     margin-bottom: 20px;
 }
 
 .faq-speaker-descr p {
     color: #A9A9A9;
+    font-size: 20px;
     font-weight: 400;
 }
 
@@ -183,3 +178,190 @@
 .applyButton {
     margin-right: 24px;
 }
+
+
+/* tablet */
+@media only screen and (max-width: 575px) {
+    .hide-faq-title {
+        display: none;
+    }
+
+    .genFaq {
+        padding-top: 124px;
+    }
+
+    #faq h2 {
+        font-size: 24px;
+        margin-bottom: 12px;
+    }
+
+    .question-section {
+        margin-bottom: 0;
+    }
+    
+    .dropdown-join-container {
+        flex-direction: column;
+    }
+
+    .dropdown-ctr {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .accordion {
+        font-size: 14px;
+        padding: 12px 0;
+    }
+
+    .arrow {
+        width: 19px;
+    }
+
+    .panel {
+        font-size: 14px;
+    }
+    
+    .panel-text {
+        margin-right: 18px;
+        padding-left: 16px;
+        margin-bottom: 12px;
+    }
+
+    .faq-join {
+        width: 100%;
+        margin-top: 40px;
+        margin-bottom: 100px;
+    }
+
+    .faq-join-descr {
+        border: none;
+        padding: 0;
+    }
+    
+    .faq-join-descr h3 {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+    
+    .faq-join-descr p {
+        font-size: 14px;
+    }
+
+    .faq-join-button {
+        float: left;
+    }
+
+    .faq-speaker {
+        width: 100%;
+        margin-top: 40px;
+        margin-bottom: 100px;
+    }
+
+    .faq-speaker-descr {
+        border: none;
+        padding: 0;
+    }
+    
+    .faq-speaker-descr h3 {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+    
+    .faq-speaker-descr p {
+        font-size: 14px;
+    }
+
+    .faq-speaker-button {
+        float: left;
+    }
+
+    .applyButton {
+        margin-right: 20px;
+    }
+
+    .sponsorFaq {
+        margin-bottom: 124px;
+    }
+}
+
+
+/* mobile */
+@media only screen and (max-width: 375px) {
+    .genFaq {
+        padding-top: 124px;
+    }
+
+    #faq h2 {
+        font-size: 24px;
+        margin-bottom: 12px;
+    }
+
+    .dropdown-ctr {
+        margin-bottom: 0;
+    }
+
+    .accordion {
+        font-size: 14px;
+        padding: 12px 0;
+    }
+
+    .arrow {
+        width: 19px;
+    }
+
+    .panel {
+        font-size: 14px;
+    }
+    
+    .panel-text {
+        margin-right: 18px;
+        padding-left: 16px;
+        margin-bottom: 12px;
+    }
+
+    .faq-join {
+        margin-top: 40px;
+        margin-bottom: 100px;
+    }
+
+    .faq-join-descr {
+        border: none;
+        padding: 0;
+    }
+    
+    .faq-join-descr h3 {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+    
+    .faq-join-descr p {
+        font-size: 14px;
+    }
+
+    .faq-speaker {
+        margin-top: 40px;
+        margin-bottom: 100px;
+    }
+
+    .faq-speaker-descr {
+        border: none;
+        padding: 0;
+    }
+    
+    .faq-speaker-descr h3 {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+    
+    .faq-speaker-descr p {
+        font-size: 14px;
+    }
+
+    .applyButton {
+        margin-right: 20px;
+    }
+
+    .sponsorFaq {
+        margin-bottom: 124px;
+    }
+ }

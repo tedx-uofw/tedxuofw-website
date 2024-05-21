@@ -38,7 +38,7 @@ const Faq = () => {
 
   return (
     <div id="faq">
-      <div className="faq-header">
+      <div className="faq-header hide-faq-title">
         <h1>Frequently Asked Questions</h1>
       </div>
 
