@@ -16,6 +16,7 @@ const Admin = () => {
     const newData = data.docs.map((doc) => ({ ...doc.data(), id: doc.id }));
     setItems(newData);
     setSelected(newData.length > 0 ? newData[0].id : '');
+    console.log(selected)
     console.log(items);
   };
 
@@ -24,7 +25,8 @@ const Admin = () => {
   }, []);
 
   const onDropdownSelect = (e) => {
-    setSelected((items.find((item) => item.id === e)).speakers);
+    const newSelect = items.find((item) => item.id === e);
+    setSelected(newSelect.id);
   };
 
   const handleInputChange = (e, type) => {
@@ -108,7 +110,7 @@ const Admin = () => {
         <input name="name" value={newEvent.name} onChange={(e) => handleInputChange(e, 'event')} placeholder="Name" />
         <input name="details" value={newEvent.details} onChange={(e) => handleInputChange(e, 'event')} placeholder="Details" />
         <input name="description" value={newEvent.description} onChange={(e) => handleInputChange(e, 'event')} placeholder="Description" />
-        <input name="imgURl" value={newEvent.imgUrl} onChange={(e) => handleInputChange(e, 'event')} placeholder="Image URL" />
+        <input name="imgUrl" value={newEvent.imgUrl} onChange={(e) => handleInputChange(e, 'event')} placeholder="Image URL" />
         <input name="link" value={newEvent.link} onChange={(e) => handleInputChange(e, 'event')} placeholder="Website URL" />
         <button onClick={addEvent}>Add Event</button>
       </div>
