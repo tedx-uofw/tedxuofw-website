@@ -7,19 +7,21 @@
   overflow: hidden;
   transition: top 0.3s;
   z-index: 2;
+  margin-left: -14rem;
+  margin-right: -15rem;
 }
 
 #nav-content {
   display: flex;
   width: 100%;   /*could change to 80%*/
-  padding: 5rem 6.25rem 10rem 6.25rem;
+  padding: 5rem 6.25rem 5rem 6.25rem;
   justify-content: space-between;
   /* align-items: flex-start; */
 }
 
 #nav-left img {
   width: 12.32706rem;
-  height: 3rem;
+  /* height: 3rem; */
   flex-shrink: 0;
 }
 

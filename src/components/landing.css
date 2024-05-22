@@ -13,10 +13,10 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-self: center;
-  background: url('../assets/landingBg.png') center;
+  background: url('https://firebasestorage.googleapis.com/v0/b/tedxuofw-1de88.appspot.com/o/Repo%20Website%2FLanding%2Flanding-background.png?alt=media&token=f551a6f7-c982-402f-aa85-6b9e1fa945d0') center;
   width: 100vw;
   mix-blend-mode: exclusion;
-  height: 1156px;
+  height: 72.25rem;
 }
 
 #intro-top {
@@ -27,28 +27,28 @@
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  gap: 36px;
+  gap: 2.25rem;;
 }
 
 #landing-about {
   display: flex;
   flex-direction: column;
-  width: 619px;
-  gap: 10px;
+  width: 38.6875rem;
+  gap: 0.625rem;
   margin-top: 14px;
 }
 
 #intro-bottom img {
-  width: 812px;
-  height: 154px;
+  width: 50.75rem;
+  height: 9.625rem;
 }
 
-#tedx-intro h1 {
-  font-size: 64px;
+#tedx-intro h1, .impact-number-pair h2 {
+  font-size: 4rem;
 }
 
 #landing-about p {
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 #tedx-intro h1, #landing-about p, .video-info-pair p, #team-card-right p {
@@ -58,8 +58,8 @@
 }
 
 #down-arrow {
-  width: 55px;
-  height: 27px;
+  width: 3.4375rem;
+  height: 1.6875rem;
   align-self: center;
 }
 
@@ -67,13 +67,13 @@
   display: inline-flex;
   flex-direction: column;
   align-items: center;
-  gap: 200px;
+  gap: 12.5rem;
   margin-top: 57px;
-  margin-bottom: 200px;
+  margin-bottom: 12.5rem;
 }
 
 #landing-content h1 {
-  font-size: 40px;
+  font-size: 2.5rem;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -83,20 +83,20 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 40px;
+  gap: 2.5rem;
 }
 
 #impact-numbers {
   display: flex;
   align-items: flex-start;
-  gap: 180px;
+  gap: 11.25rem;
 }
 
 .impact-number-pair {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 36px;
+  gap: 2.25rem;
 }
 
 .impact-number-pair h2, p {
@@ -105,12 +105,8 @@
   line-height: normal;
 }
 
-.impact-number-pair h2 {
-  font-size: 64px;
-}
-
 .impact-number-pair p {
-  font-size: 16px;
+  font-size: 1rem;
   text-align: center;
 }
 
@@ -122,11 +118,11 @@
   display: flex;
   height: 372.955px;
   align-items: flex-start;
-  gap: 44px;
+  gap: 2.75rem;
 }
 
 .video-info-pair p {
-  font-size: 20px;
+  font-size: 1.25rem;
   margin-top: 0px;
   margin-bottom: 0px;
 }
@@ -135,24 +131,24 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 24px;
+  gap: 1.5rem;
 }
 
 #talk-videos iframe {
   width: 460px;
-  height: 292.257px;
+  height: 18.26606rem;
 }
 
 #team-card {
   display: flex;
-  width: 1470px;
+  width: 91.875rem;
   align-items: center;
-  gap: 40px;
+  gap: 2.5rem;
 }
 
 #team-card img {
-  width: 1024.693px;
-  height: 549.618px;
+  width: 64.04331rem;
+  height: 34.35113rem;
 }
 
 
@@ -160,9 +156,9 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 20px;
+  gap: 1.25rem;
 }
 
 #team-card-right p {
-  font-size: 24px;
+  font-size: 1.5rem;
 }

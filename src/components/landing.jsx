@@ -1,11 +1,11 @@
 import React from 'react';
 import './landing.css';
-import upcomingEvent1 from '../assets/upcomingEvent1.png';
-import logo from '../assets/tedx-logo.png'
 import Event from './event-component/event.jsx';
 import Button from './button/button';
 import downArrow from '../assets/downArrow.svg';
-import team from '../assets/landing-team.png';
+// import team from '../assets/landing-team.png';
+// import upcomingEvent1 from '../assets/upcomingEvent1.png';
+// import logo from '../assets/tedx-logo.png'
 
 // javascript function to find how much padding to incr on bg img
 // get width of tedx-intro
@@ -23,7 +23,7 @@ const landing = () => {
         <div id='intro-top'>
         <h1>WE ARE</h1>
           <div id='intro-bottom'>
-            <img src={logo} alt='tedx-logo'/>
+            <img src='https://firebasestorage.googleapis.com/v0/b/tedxuofw-1de88.appspot.com/o/Repo%20Website%2FLanding%2Ftedx-logo.png?alt=media&token=bdf7235f-f733-4a29-997f-53c05df1e985' alt='tedx-logo'/>
             <section id='landing-about'>
               <p>TEDxUofW was established to bring inspirational and informative TED style talks to the University of Washington.</p>
               <p>Since 2012, our student-run organization has sought to give amazing speakers a receptive audience to share their passions with.</p>
@@ -43,7 +43,7 @@ const landing = () => {
           <h1>OUR IMPACT</h1>
           <div id='impact-numbers'>
             <section className='impact-number-pair'>
-              <h2>60</h2>
+              <h2>300</h2>
               <p>students</p>
             </section>
             <section className='impact-number-pair'>
@@ -51,11 +51,11 @@ const landing = () => {
               <p>conferences</p>
             </section>
             <section className='impact-number-pair'>
-              <h2>36</h2>
+              <h2>93</h2>
               <p>speakers</p>
             </section>
             <section className='impact-number-pair' id='lives-impacted'>
-              <h2>2451</h2>
+              <h2>1842</h2>
               <p>lives impacted</p>
             </section>
           </div>
@@ -71,7 +71,7 @@ const landing = () => {
               my gosh it’s going to be so great guys im so tired i just finished work and honestly i
               just want to sleep but i have so much work to do rahhhhhhhh also the image will probably
               hold the conference promo or branding somewhere'
-            image={upcomingEvent1}
+            image='https://firebasestorage.googleapis.com/v0/b/tedxuofw-1de88.appspot.com/o/Event%20Banners%2FupcomingEvent1.png?alt=media&token=3f07daee-32a7-44fd-a519-c30425e8ddb5'
             eventLink=''
           />
         </div>
@@ -108,9 +108,13 @@ const landing = () => {
         <div id='join-our-team'>
           <h1>JOIN OUR TEAM</h1>
           <div id='team-card'>
-            <img src={team} alt='tedx-team-2024'/>
+            <img src="https://firebasestorage.googleapis.com/v0/b/tedxuofw-1de88.appspot.com/o/Repo%20Website%2FLanding%2Flanding-team.png?alt=media&token=87b666c2-1c79-4476-8db4-7d0a8e8e106f" alt='tedx-team-2024'/>
             <section id='team-card-right'>
-              <p>Be a part of the team that makes it happen.</p>
+              <p> Are you passionate about TED talks and looking for an opportunity to gain valuable
+              experience? Whether you're interested in Design, Marketing, Web Development,
+              Speaker Selection, or Logistics and Finance, there's a place for you on our team.
+              While applications for UW students are currently closed, you can fill out this form to
+              be notified when they reopen, typically in the first few weeks of fall quarter. </p>
               <Button
                 title='JOIN THE TEAM'
                 link=''
