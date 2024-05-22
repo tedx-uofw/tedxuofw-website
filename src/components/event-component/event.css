@@ -8,9 +8,10 @@
 }
 
 .event-card > img {
-  width: 53.06063rem;
-  height: 29.84325rem;
+  width: 53.061rem;
+  height: 29.843rem;
   flex-shrink: 0;
+  object-fit: cover;
 }
 
 #event-info {
