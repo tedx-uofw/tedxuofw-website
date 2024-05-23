@@ -37,6 +37,11 @@
 }
 
 @media only screen and (max-width: 450px) {
+
+  .boxes-ctr {
+    justify-content: center;
+  }
+
   .past-events-container {
     flex-direction: column;
   }
