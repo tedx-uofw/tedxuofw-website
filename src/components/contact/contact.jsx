@@ -7,9 +7,9 @@ import facebook from '../../assets/social-media/facebook.svg'
 import instagram from '../../assets/social-media/instagram.svg'
 import tiktok from '../../assets/social-media/tiktok.svg'
 import linkedin from '../../assets/social-media/linkedin.svg'
-import venmo from '../../assets/social-media/venmo.png'
-import zelle from '../../assets/social-media/zelle.png'
-import paypal from '../../assets/social-media/paypal.png'
+import venmo from '../../assets/social-media/Venmo.svg'
+import zelle from '../../assets/social-media/Zelle.svg'
+import paypal from '../../assets/social-media/Paypal.svg'
 
 import Form from './Form'
 
@@ -48,7 +48,7 @@ const Contact = () => {
         <h1 className='contact-heading'>DONATE</h1>
         <hr className='contact-hr'></hr>
         <div className='donate-content-ctr'>
-          
+
           <div className='donate-content'>
             <h2 className='stay-updated-title'>Make an Impact in Your Community</h2>
             <p className='stay-updated-content'>Donations help us invest in training our speakers, improving conference day experiences for our guests, and in recording TEDx talks with high-quality equipment. Any amount is appreciated!</p>
