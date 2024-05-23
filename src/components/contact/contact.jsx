@@ -32,11 +32,11 @@ const Contact = () => {
             <hr className='contact-hr'></hr>
 
             <div className='contact-socials-ctr'>
-              <a href="mailto:tedxuofw@uw.edu"><img src={email} alt='Email Link'/></a>
-              <a href="https://www.facebook.com/TEDxUofW"><img src={facebook} alt='Facebook Link'/></a>
-              <a href="https://www.instagram.com/tedxuofw/"><img src={instagram} alt='Instagram Link'/></a>
-              <a href="https://www.tiktok.com/@tedxuofw"><img src={tiktok} alt='TikTok Link'/></a>
-              <a href="https://www.linkedin.com/company/tedxuofw/mycompany/"><img src={linkedin} alt='LinkedIn Link'/></a>
+              <a href="mailto:tedxuofw@uw.edu" target='_blank'><img src={email} alt='Email Link'/></a>
+              <a href="https://www.facebook.com/TEDxUofW" target='_blank'><img src={facebook} alt='Facebook Link'/></a>
+              <a href="https://www.instagram.com/tedxuofw/" target='_blank'><img src={instagram} alt='Instagram Link'/></a>
+              <a href="https://www.tiktok.com/@tedxuofw" target='_blank'><img src={tiktok} alt='TikTok Link'/></a>
+              <a href="https://www.linkedin.com/company/tedxuofw/mycompany/" target='_blank'><img src={linkedin} alt='LinkedIn Link'/></a>
 
             </div>
 
@@ -58,17 +58,17 @@ const Contact = () => {
 
           <div className='donate-links-ctr'>
             <div className='donate-link'>
-              <a href=""><img src={venmo} alt='Venmo Link'/></a>
+              <a href="" target='_blank'><img src={venmo} alt='Venmo Link'/></a>
               <p className='donate-link-names'>TEDxUofW_2024</p>
             </div>
 
             <div className='donate-link'>
-              <a href=""><img src={zelle} alt='Zelle Link'/></a>
+              <a href="" target='_blank'><img src={zelle} alt='Zelle Link'/></a>
               <p className='donate-link-names'>tedxuofw@uw.edu</p>
             </div>
 
             <div className='donate-link'>
-              <a href=""><img src={paypal} alt='PayPal Link'/></a>
+              <a href="" target='_blank'><img src={paypal} alt='PayPal Link'/></a>
               <p className='donate-link-names'>Tedxuofw</p>
             </div>
 
