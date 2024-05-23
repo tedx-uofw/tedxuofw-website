@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { getDocs, collection, addDoc, arrayUnion, updateDoc, doc } from 'firebase/firestore';
 import { db } from '../../firebase';
 import Dropdown from '../past-events/DropdownComp';
+import './Admin.css'
 
 
 const Admin = () => {
@@ -81,38 +82,40 @@ const Admin = () => {
 
 
   return (
-    <div>
-      {items.length > 0 && <Dropdown items={items} onSelect={onDropdownSelect} />}
+    <div className='admin-comp'>
       <div>
-        <h2>Add New Speaker</h2>
-        <input name="name" value={newSpeaker.name} onChange={(e) => handleInputChange(e, 'speaker')} placeholder="Name" />
-        <input name="title" value={newSpeaker.title} onChange={(e) => handleInputChange(e, 'speaker')} placeholder="Title" />
-        <input name="description" value={newSpeaker.description} onChange={(e) => handleInputChange(e, 'speaker')} placeholder="Description" />
-        <input name="imgUrl" value={newSpeaker.imgUrl} onChange={(e) => handleInputChange(e, 'speaker')} placeholder="Image URL" />
-        <input name="linkedinUrl" value={newSpeaker.linkedinUrl} onChange={(e) => handleInputChange(e, 'speaker')} placeholder="LinkedIn URL" />
-        <input name="youtubeUrl" value={newSpeaker.youtubeUrl} onChange={(e) => handleInputChange(e, 'speaker')} placeholder="YouTube URL" />
-        <button onClick={addSpeaker}>Add Speaker</button>
-      </div>
-      <div>
-        <h2>Add New Performer</h2>
-        <input name="name" value={newPerformer.name} onChange={(e) => handleInputChange(e, 'performer')} placeholder="Name" />
-        <input name="title" value={newPerformer.title} onChange={(e) => handleInputChange(e, 'performer')} placeholder="Title" />
-        <input name="description" value={newPerformer.description} onChange={(e) => handleInputChange(e, 'performer')} placeholder="Description" />
-        <input name="imgUrl" value={newPerformer.imgUrl} onChange={(e) => handleInputChange(e, 'performer')} placeholder="Image URL" />
-        <input name="linkedinUrl" value={newPerformer.linkedinUrl} onChange={(e) => handleInputChange(e, 'performer')} placeholder="LinkedIn URL" />
-        <input name="youtubeUrl" value={newPerformer.youtubeUrl} onChange={(e) => handleInputChange(e, 'performer')} placeholder="YouTube URL" />
-        <button onClick={addPerformer}>Add Performer</button>
-      </div>
+        {items.length > 0 && <Dropdown items={items} onSelect={onDropdownSelect} />}
+        <div>
+          <h2>Add New Speaker</h2>
+          <input name="name" value={newSpeaker.name} onChange={(e) => handleInputChange(e, 'speaker')} placeholder="Name" />
+          <input name="title" value={newSpeaker.title} onChange={(e) => handleInputChange(e, 'speaker')} placeholder="Title" />
+          <input name="description" value={newSpeaker.description} onChange={(e) => handleInputChange(e, 'speaker')} placeholder="Description" />
+          <input name="imgUrl" value={newSpeaker.imgUrl} onChange={(e) => handleInputChange(e, 'speaker')} placeholder="Image URL" />
+          <input name="linkedinUrl" value={newSpeaker.linkedinUrl} onChange={(e) => handleInputChange(e, 'speaker')} placeholder="LinkedIn URL" />
+          <input name="youtubeUrl" value={newSpeaker.youtubeUrl} onChange={(e) => handleInputChange(e, 'speaker')} placeholder="YouTube URL" />
+          <button onClick={addSpeaker}>Add Speaker</button>
+        </div>
+        <div>
+          <h2>Add New Performer</h2>
+          <input name="name" value={newPerformer.name} onChange={(e) => handleInputChange(e, 'performer')} placeholder="Name" />
+          <input name="title" value={newPerformer.title} onChange={(e) => handleInputChange(e, 'performer')} placeholder="Title" />
+          <input name="description" value={newPerformer.description} onChange={(e) => handleInputChange(e, 'performer')} placeholder="Description" />
+          <input name="imgUrl" value={newPerformer.imgUrl} onChange={(e) => handleInputChange(e, 'performer')} placeholder="Image URL" />
+          <input name="linkedinUrl" value={newPerformer.linkedinUrl} onChange={(e) => handleInputChange(e, 'performer')} placeholder="LinkedIn URL" />
+          <input name="youtubeUrl" value={newPerformer.youtubeUrl} onChange={(e) => handleInputChange(e, 'performer')} placeholder="YouTube URL" />
+          <button onClick={addPerformer}>Add Performer</button>
+        </div>
 
-      <div>
-        <h2>Add New Event</h2>
-        <input name="title" value={newEvent.title} onChange={(e) => handleInputChange(e, 'event')} placeholder="Title" />
-        <input name="name" value={newEvent.name} onChange={(e) => handleInputChange(e, 'event')} placeholder="Name" />
-        <input name="details" value={newEvent.details} onChange={(e) => handleInputChange(e, 'event')} placeholder="Details" />
-        <input name="description" value={newEvent.description} onChange={(e) => handleInputChange(e, 'event')} placeholder="Description" />
-        <input name="imgUrl" value={newEvent.imgUrl} onChange={(e) => handleInputChange(e, 'event')} placeholder="Image URL" />
-        <input name="link" value={newEvent.link} onChange={(e) => handleInputChange(e, 'event')} placeholder="Website URL" />
-        <button onClick={addEvent}>Add Event</button>
+        <div>
+          <h2>Add New Event</h2>
+          <input name="title" value={newEvent.title} onChange={(e) => handleInputChange(e, 'event')} placeholder="Title" />
+          <input name="name" value={newEvent.name} onChange={(e) => handleInputChange(e, 'event')} placeholder="Name" />
+          <input name="details" value={newEvent.details} onChange={(e) => handleInputChange(e, 'event')} placeholder="Details" />
+          <input name="description" value={newEvent.description} onChange={(e) => handleInputChange(e, 'event')} placeholder="Description" />
+          <input name="imgUrl" value={newEvent.imgUrl} onChange={(e) => handleInputChange(e, 'event')} placeholder="Image URL" />
+          <input name="link" value={newEvent.link} onChange={(e) => handleInputChange(e, 'event')} placeholder="Website URL" />
+          <button onClick={addEvent}>Add Event</button>
+        </div>
       </div>
     </div>
   );

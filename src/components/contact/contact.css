@@ -1,3 +1,7 @@
+.contact-container {
+    padding-top: 10rem;
+}
+
 .contact-heading {
     padding-bottom: 24px;
     margin-bottom: 0rem;
@@ -9,7 +13,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    
+
 }
 
 .stay-updated-title {
@@ -86,4 +90,65 @@
 
 .contact-us-container, .donate-container {
     padding-bottom: 120px;
+}
+
+@media only screen and (max-width: 450px) {
+    .contact-heading {
+        padding-bottom: 12px;
+        font-size: 24px;
+    }
+
+    .stay-updated-ctr {
+        width: 335px;
+
+    }
+
+    .contact-form-container {
+        flex-direction: column;
+    }
+
+    .stay-updated-title {
+        font-size: 16px;
+        padding-bottom: 8px;
+    }
+
+    .stay-updated-content {
+        font-size: 14px;
+        padding-bottom: 24px;
+        margin-bottom: 0rem;
+    }
+
+    .contact-hr {
+        margin: 0rem;
+        padding-bottom: 24px;
+    }
+
+    .donate-subtext {
+        color: #A9A9A9;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .donate-content {
+        width: 335px;
+    }
+
+    .donate-content-ctr {
+        flex-direction: column;
+        gap: 0rem;
+    }
+
+    .donate-link {
+        gap: 12px;
+    }
+
+    .donate-link-names {
+        font-size: 16px;
+    }
+
+    .contact-us-container, .donate-container {
+        padding-bottom: 80px;
+    }
 }

@@ -37,3 +37,28 @@ form {
     gap: 0.75rem;
     align-items: flex-end;
 }
+
+@media only screen and (max-width: 450px) {
+    .fields {
+        gap: 8px;
+        padding-bottom: 16px;
+    }
+
+    .input-fields {
+        width: 335px;
+        padding: 13.29px 19.935px;
+    }
+
+    .message-box {
+        height: 166.129px;
+    }
+
+    form {
+        gap: 16px;
+        align-items: center;
+    }
+
+    .form-container {
+        padding-bottom: 80px;
+    }
+}

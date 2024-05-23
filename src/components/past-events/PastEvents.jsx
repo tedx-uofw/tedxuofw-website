@@ -37,9 +37,14 @@ const PastEvents = () => {
       <div className='events-ctr'>
         <div className='past-events-title'>
           <h1 className='events-heading'>PAST EVENTS</h1>
-          {items.length > 0 && (<Dropdown items={items} onSelect={onDropdownSelect} /> )}
+          <div className='desktop-dropdown'>
+            {items.length > 0 && (<Dropdown items={items} onSelect={onDropdownSelect} /> )}
+          </div>
         </div>
         <hr className='past-events-hr'></hr>
+        <div className='mobile-dropdown'>
+        {items.length > 0 && (<Dropdown items={items} onSelect={onDropdownSelect} /> )}
+        </div>
           {selectedYear?.event?.map((event) => (
             <Event title={event.title} name={event.name} details={event.details} description={event.description} image={event.imgUrl} eventLink={event.link} />
           ))}
