@@ -150,7 +150,8 @@
 }
 
 .faq-speaker-descr {
-    border: none;
+    border-top: 1px solid #A9A9A9;
+    border-bottom: 1px solid #A9A9A9;
     /* padding: 24px 0; */
     padding-top: 24px;
     padding-bottom: 12px;
@@ -175,24 +176,27 @@
     float: right;
 }
 
-.applyButton {
-    margin-right: 24px;
+.nominateButton {
+    margin-left: 24px;
+
+    /* take this line out when nomination page is open */
+    display: none; 
 }
 
 
 /* tablet */
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 1024px) {
     .hide-faq-title {
         display: none;
     }
 
     .genFaq {
-        padding-top: 124px;
+        padding-top: 131px;
     }
 
     #faq h2 {
-        font-size: 24px;
-        margin-bottom: 12px;
+        font-size: 32px;
+        margin-bottom: 16px;
     }
 
     .question-section {
@@ -209,28 +213,28 @@
     }
 
     .accordion {
-        font-size: 14px;
+        font-size: 16px;
         padding: 12px 0;
     }
 
     .arrow {
-        width: 19px;
+        width: 24px;
     }
 
     .panel {
-        font-size: 14px;
+        font-size: 16px;
     }
     
     .panel-text {
         margin-right: 18px;
-        padding-left: 16px;
+        padding-left: 24px;
         margin-bottom: 12px;
     }
 
     .faq-join {
         width: 100%;
-        margin-top: 40px;
-        margin-bottom: 100px;
+        margin-top: 60px;
+        margin-bottom: 160px;
     }
 
     .faq-join-descr {
@@ -239,22 +243,23 @@
     }
     
     .faq-join-descr h3 {
-        font-size: 16px;
+        font-size: 20px;
         margin-bottom: 8px;
     }
     
     .faq-join-descr p {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .faq-join-button {
-        float: left;
+        float: none;
+        text-align: center;
     }
 
     .faq-speaker {
         width: 100%;
-        margin-top: 40px;
-        margin-bottom: 100px;
+        margin-top: 60px;
+        margin-bottom: 160px;
     }
 
     .faq-speaker-descr {
@@ -263,30 +268,31 @@
     }
     
     .faq-speaker-descr h3 {
-        font-size: 16px;
+        font-size: 20px;
         margin-bottom: 8px;
     }
     
     .faq-speaker-descr p {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .faq-speaker-button {
-        float: left;
+        float: none;
+        justify-content: center;
     }
 
-    .applyButton {
-        margin-right: 20px;
+    .nominateButton {
+        margin-left: 20px;
     }
 
     .sponsorFaq {
-        margin-bottom: 124px;
+        margin-bottom: 110px;
     }
 }
 
 
 /* mobile */
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 450px) {
     .genFaq {
         padding-top: 124px;
     }
@@ -294,10 +300,6 @@
     #faq h2 {
         font-size: 24px;
         margin-bottom: 12px;
-    }
-
-    .dropdown-ctr {
-        margin-bottom: 0;
     }
 
     .accordion {
@@ -323,11 +325,6 @@
         margin-top: 40px;
         margin-bottom: 100px;
     }
-
-    .faq-join-descr {
-        border: none;
-        padding: 0;
-    }
     
     .faq-join-descr h3 {
         font-size: 16px;
@@ -338,14 +335,13 @@
         font-size: 14px;
     }
 
+    .faq-join-button {
+        float: left;
+    }
+
     .faq-speaker {
         margin-top: 40px;
         margin-bottom: 100px;
-    }
-
-    .faq-speaker-descr {
-        border: none;
-        padding: 0;
     }
     
     .faq-speaker-descr h3 {
@@ -355,6 +351,10 @@
     
     .faq-speaker-descr p {
         font-size: 14px;
+    }
+
+    .faq-speaker-button {
+        float: left;
     }
 
     .applyButton {

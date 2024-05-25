@@ -5,7 +5,7 @@ const Button = ({ title, link }) => {
 
   return (
     <div id="buttons">
-        <a href={link}><button>{title}</button></a>
+        <a href={link} target="_blank" rel="noopener noreferrer"><button>{title}</button></a>
     </div>
 
     // code to call component

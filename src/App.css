@@ -18,7 +18,7 @@ body,
 }
 
 /* tablet */
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 1024px) {
     .App {
         padding-left: 20px;
         padding-right: 20px;

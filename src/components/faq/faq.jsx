@@ -104,7 +104,7 @@ const Faq = () => {
               be notified when they reopen, typically in the first few weeks of fall quarter.</p>
             </div>
             <div className="faq-join-button">
-              <Button title="JOIN NOW" link="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" />
+              <Button title="JOIN NOW" link="https://forms.office.com/r/y0m8JQrVL9" />
             </div>
           </div>
         </div>
@@ -203,9 +203,11 @@ const Faq = () => {
             </div>
             <div className="faq-speaker-button">
               <div className="applyButton">
-                <Button title="APPLY" link="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" />
+                <Button title="APPLY" link="https://forms.office.com/r/DN6xmj6Lhh" />
               </div>
-              <Button title="NOMINATE" link="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" />
+              <div className="nominateButton">
+                <Button title="NOMINATE" link="" />
+              </div>
             </div>
           </div>
         </div>
