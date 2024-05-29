@@ -58,7 +58,7 @@ const about = () => {
                   Eget lorem pulvinar cras fermentum vulputate eget et. Eget tortor dictum amet morbi arcu adipiscing varius.</p>
                 <Button 
                   title = 'TEDX WEBSITE' 
-                  link = ''
+                  link = 'https://www.ted.com/about/programs-initiatives/tedx-program'
                 />
           </div>
 
@@ -76,7 +76,7 @@ const about = () => {
                   Eget lorem pulvinar cras fermentum vulputate eget et. Eget tortor dictum amet morbi arcu adipiscing varius.</p>
                 <Button 
                   title = 'TED WEBSITE' 
-                  link = ''
+                  link = 'https://www.ted.com/'
                 />
           </div>
 

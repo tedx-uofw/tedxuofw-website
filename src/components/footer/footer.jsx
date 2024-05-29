@@ -10,38 +10,36 @@ import tiktok from "../../assets/social-media/tiktok.svg";
 const footer = () => {
   return (
 <div id="footer">
-        <footer class="row">
-          {/* Right half of footer */}
-          <div id="left" class="col">
+        <footer>
+          {/* Top half of footer */}
+          <div id="top">
             {/* Logo */}
-            <div class="section">
-              <a href=""><img src={logo} alt="Logo of TEDxUofW" id="logo" href=""></img></a>
-            </div>
+            <a href=""><img src={logo} alt="Logo of TEDxUofW" id="logo" href=""></img></a>
 
-             {/* Copyright */}
-             <p id="copyright">©TEDxUofW 2024 | Crossroads <span id="bar">|</span> <span id="blurb">This independent TEDx event is operated under license from TED.</span></p>
-             </div>
-
-          {/* left half of footer */}
-          <div id="right" class ="col">
-              {/* Sitemap */}
-              <div id="pages">
+             {/* Sitemap */}
+             <div id="pages">
               <div class="section">
-                <div className="row">
-                  <div class="col">
-                    <a href="/about">ABOUT</a>
+                <div class="footer-row">
+                  <div class="footer-col">
                     <a href="/past-events">PAST EVENTS</a>
+                    <a href="/about">ABOUT</a>
                   </div>
-                  <div class="col">
+                  <div class="footer-col">
                     <a href="/faq">FAQ</a>
                     <a href="/contact">CONTACT US</a>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
+          {/* Second half of footer */}
+          <div id="bottom" class ="">
+            {/* Copyright */}
+            <p id="copyright">©TEDxUofW 2024 | This independent TEDx event is operated under license from TED.</p>
+
             {/* Logos */}
-              <div class="mobile-only"><p>CONNECT WITH US:</p></div>
-            <div id="icons">
+            <div id="icons">            
+            <div class="mobile-only"><p>CONNECT WITH US:</p></div>
               {/* Mail */}
               <a href="mailto:tedxuofw@uw.edu"><img src={email}></img></a>
               {/* Facebook */}
