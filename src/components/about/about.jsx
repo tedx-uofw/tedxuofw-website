@@ -98,7 +98,7 @@ const about = () => {
             </div>
         </div>
 
-        <div class="about-col">
+        <div id="ro-img" class="about-col">
           <img src = {ro}/>
         </div>
       </div>

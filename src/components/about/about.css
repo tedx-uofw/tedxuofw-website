@@ -35,9 +35,10 @@
   gap: 2.5rem;
 }
 
-#about #logo {
-  height: 7rem;
-  width: auto;
+#logo {
+  max-width: 30rem;
+  height: auto;
+  padding-bottom: 1.5rem;
 }
 
 #tedxuofw, #ro {
@@ -80,9 +81,56 @@
 }
 
 #ro img {
-  width: 38.25rem;
+  max-width: 38.25rem;
+  height: auto;
 }
 
 #tedxuofw {
   gap: 3rem;
 }
+
+/* Responsive CSS for tablets: */
+@media screen and (max-width: 1024px) {
+  .about-row, #tedxuofw {
+    display: block !important;
+  }
+  #about {
+    margin: 1.25rem;
+  }
+  #logo {
+    margin-top: 2rem;
+    max-width: 100%;
+  }
+  .carousel img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    margin-top: 3.75rem;
+  }
+  #header {
+    text-align: left;
+    padding-bottom: 2rem;
+  }
+  #tedx, #ted, #ro .about-row .about-col {
+    padding-top: 4rem;
+  }
+  #ro {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    display: grid !important;
+    gap: 2rem;
+  }
+  #ro .about-row {
+    display: grid !important;
+    flex-direction: column;
+    gap: 2rem !important;
+  }
+  #ro-img {
+    order: -1;
+  }
+  #ro img {
+    border-radius: 1rem;
+    max-width: 100%;
+  }
+}  
