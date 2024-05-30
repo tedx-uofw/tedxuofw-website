@@ -13,13 +13,13 @@ const DropdownComp = ({ items, onSelect }) => {
 
   return (
     <Dropdown onSelect={(e) => handleSelect(e)}>
-      <Dropdown.Toggle variant="success" id="dropdown-basic">
+      <Dropdown.Toggle id="dropdown-basic">
         {selected != null ? selected : "View More"}
       </Dropdown.Toggle>
 
-      <Dropdown.Menu>
+      <Dropdown.Menu id='dropdown-menu'>
         {items.map((item, idx) => (
-          <Dropdown.Item key={idx} eventKey={item.id}>{item.id}</Dropdown.Item>
+          <Dropdown.Item id='dropdown-item' key={idx} eventKey={item.id}>{item.id}</Dropdown.Item>
         ))}
       </Dropdown.Menu>
     </Dropdown>

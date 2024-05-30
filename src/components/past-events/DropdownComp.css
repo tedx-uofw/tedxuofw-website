@@ -18,7 +18,51 @@
     line-height: normal;
 }
 
-@media only screen and (max-width: 450px) {
+/* Basic styling for the Dropdown component */
+
+  #dropdown-menu {
+    width: 100%;
+    max-height: 200px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: #101010;
+  }
+
+  /* WebKit Browsers */
+#dropdown-menu::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  #dropdown-menu::-webkit-scrollbar-track {
+    background: #2e2e2e;
+  }
+
+  #dropdown-menu::-webkit-scrollbar-thumb {
+    background-color: #4e4e4e;
+    border-radius: 4px;
+    border: 2px solid #2e2e2e;
+  }
+
+  #dropdown-menu::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+  #dropdown-item {
+    background: #292727;
+    color: #FFF;
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 12px 36px;
+  }
+
+  #dropdown-item:hover {
+    background-color: #641A15;
+  }
+
+@media only screen and (max-width: 1024px) {
     #dropdown-basic {
         padding: 5px 8px;
         gap: 11px;

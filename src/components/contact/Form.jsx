@@ -52,13 +52,11 @@ const Form = () => {
                 <input className='input-fields' type="text" name="user_phone" placeholder='Your Phone Number (opt)' />
                 <textarea className='input-fields message-box' name="message" placeholder='Reason for contact (questions about TEDxUofW, why you want to become a sponsor, etc)' required/>
             </div>
-
+            </form>
             <div className='submit-btn'>
                 <Button className="contact-btn" title="SUBMIT" type="submit" disabled={isSubmitting} />
                 {stateMessage && <p>{stateMessage}</p>}
             </div>
-
-            </form>
 
     </div>
   )

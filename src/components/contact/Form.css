@@ -2,7 +2,8 @@
 
 .form-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    width: 39%;
 }
 
 .fields {
@@ -15,7 +16,7 @@
 .input-fields {
     display: flex;
     flex-direction: column;
-    width: 47.313rem;
+    /* width: 47.313rem; */
     padding: 1.5rem 2.25rem;
     align-items: center;
     gap: 0.75rem;
@@ -35,17 +36,22 @@ form {
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
-    align-items: flex-end;
+    align-content: stretch;
+    width: 100%;
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 1024px) {
     .fields {
         gap: 8px;
         padding-bottom: 16px;
     }
 
+    .form-container {
+        width: 100%;
+    }
+
     .input-fields {
-        width: 335px;
+        display: flex;
         padding: 13.29px 19.935px;
     }
 
@@ -55,10 +61,11 @@ form {
 
     form {
         gap: 16px;
-        align-items: center;
+
     }
 
     .form-container {
         padding-bottom: 80px;
+        align-items: center;
     }
 }

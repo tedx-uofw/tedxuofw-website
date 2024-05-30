@@ -36,7 +36,7 @@
   display: none;
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 1024px) {
 
   .boxes-ctr {
     justify-content: center;
@@ -47,14 +47,10 @@
   }
 
   .events-heading {
-    font-size: 24px;
+    font-size: 32px;
   }
 
   .desktop-dropdown {
-    display: none;
-  }
-
-  .mobile-dropdown {
     display: flex;
     padding-bottom: 24px;
   }
@@ -67,5 +63,16 @@
     padding-bottom: 24px;
     margin-top: 0rem;
     margin-bottom: 0rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .mobile-dropdown {
+    display: flex;
+    padding-bottom: 24px;
+  }
+
+  .desktop-dropdown {
+    display: none;
   }
 }
