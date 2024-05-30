@@ -16,7 +16,7 @@ const Event = ({title, name, details, description, image, eventLink}) => {
 
   return (
     <div id="event-card">
-      <img src={image} alt='event1'/>
+      <img src={image} alt='event1' className='event-img'/>
         <section id='event-info'>
           <section id='event-header'>
             <img src={icon} alt='icon'/>

@@ -7,7 +7,7 @@
   align-self: center;
 }
 
-.event-card > img {
+.event-img {
   width: 53.061rem;
   height: 29.843rem;
   flex-shrink: 0;
