@@ -191,7 +191,8 @@
     }
 
     .genFaq {
-        padding-top: 131px;
+        /* padding-top: 131px; */
+        padding-top: 200px;
     }
 
     #faq h2 {
@@ -294,7 +295,8 @@
 /* mobile */
 @media only screen and (max-width: 450px) {
     .genFaq {
-        padding-top: 124px;
+        /* padding-top: 124px; */
+        padding-top: 200px;
     }
 
     #faq h2 {
