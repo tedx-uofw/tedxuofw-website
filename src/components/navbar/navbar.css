@@ -16,7 +16,12 @@
   width: 100%;   /*could change to 80%*/
   padding: 5rem 6.25rem 5rem 6.25rem;
   justify-content: space-between;
-  /* align-items: flex-start; */
+  align-items: center;
+}
+
+#logo {
+  padding: 5rem 6.25rem 5rem 6.25rem;
+
 }
 
 #nav-left img {
@@ -47,3 +52,108 @@
   color: #FF2B06;
   transition: 0.5s;
 }
+
+#small-screen {
+  display: none;
+}
+
+#side-menu-icon {
+  display: none;
+}
+
+#side-menu-icon-clicked {
+  display: none;
+}
+
+#half-bg {
+  display: none;
+}
+
+#exit-button {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  #side-menu-icon {
+    display: block;
+    float: right;
+  }
+
+  #side-menu-icon-clicked {
+    display: none;
+  }
+
+  #nav-right {
+    display: none;
+  }
+
+  #nav-right-side {
+    display: flex;
+    flex-direction: column-reverse;
+    z-index: 1;
+    margin-left: 20%;
+  }
+
+  #nav-right-side a {
+    color: #FFFAFA;
+    font-family: "Plus Jakarta Sans";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    padding-bottom: 1.3rem;
+    padding-top: 1.3rem;
+  }
+
+  #navbar {
+    margin-left: -2rem;
+    margin-right: -2rem;
+  }
+
+  #navbar-with-side-menu {
+    width: 100vw;
+    display: flex;
+    position: fixed;
+    overflow: hidden;
+    transition: top 0.3s;
+    z-index: 2;
+    margin-left: -2rem;
+    margin-right: -2rem;
+  }
+
+  #nav-content-side {
+    display: flex;
+    width: 100%;   /*could change to 80%*/
+    padding: 5rem 6.25rem 5rem 6.25rem;
+    /* justify-content: space-between; */
+  }
+
+  #half-bg-side {
+    width: 30%;
+    height: 100vh;
+    background: linear-gradient(180deg, #101010 27.24%, rgba(16, 16, 16, 0.00) 87.15%);
+    position: fixed;
+    padding: 30%;
+    right: 0;
+    top: 0;
+  }
+
+  #nav-button-row {
+    display: flex;
+    justify-content: space-between;
+    width: 45vw;
+    align-items: center;
+    padding-bottom: 1.3rem;
+  }
+
+  #nav-right-side #buttons button{
+    font-size: 1.5rem;
+  }
+
+  #exit-btn {
+    height: 24px;
+  }
+}
+
+  /* for smaller screen size make sure to adjust padding around entire navbar and also padding on half bg side like esp below 800px*/
