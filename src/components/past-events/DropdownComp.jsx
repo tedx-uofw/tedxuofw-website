@@ -11,14 +11,20 @@ const DropdownComp = ({ items, onSelect }) => {
     onSelect(event);
   }
 
+  const sortedItems = items.sort((a, b) => {
+    const aYear = parseInt(a.id.split(" ").pop());
+    const bYear = parseInt(b.id.split(" ").pop());
+    return bYear - aYear;
+  });
+
   return (
-    <Dropdown onSelect={(e) => handleSelect(e)}>
+    <Dropdown id="dropdown" onSelect={(e) => handleSelect(e)}>
       <Dropdown.Toggle id="dropdown-basic">
         {selected != null ? selected : "View More"}
       </Dropdown.Toggle>
 
       <Dropdown.Menu id='dropdown-menu'>
-        {items.map((item, idx) => (
+        {sortedItems.map((item, idx) => (
           <Dropdown.Item id='dropdown-item' key={idx} eventKey={item.id}>{item.id}</Dropdown.Item>
         ))}
       </Dropdown.Menu>

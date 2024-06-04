@@ -17,8 +17,6 @@ const Admin = () => {
     const newData = data.docs.map((doc) => ({ ...doc.data(), id: doc.id }));
     setItems(newData);
     setSelected(newData.length > 0 ? newData[0].id : '');
-    console.log(selected)
-    console.log(items);
   };
 
   useEffect(() => {

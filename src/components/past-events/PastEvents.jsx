@@ -19,9 +19,7 @@ const PastEvents = () => {
           ...doc.data(), id: doc.id
     }))
     setItems(newData);
-    console.log(newData)
     setSelectedYear(newData.length > 0 ? newData[0] : {})
-    console.log(selectedYear)
   }
 
   useEffect(() => {
