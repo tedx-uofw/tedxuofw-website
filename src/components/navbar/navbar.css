@@ -34,7 +34,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 3.75rem;
+  /* gap: 3.75rem; */
 }
 
 #nav-right a {
@@ -46,6 +46,7 @@
   font-weight: 400;
   line-height: normal;
   text-decoration: none;
+  margin-left: 3.75rem;
 }
 
 #nav-right a:hover {
@@ -73,10 +74,17 @@
   display: none;
 }
 
+@media only screen and (max-width: 1130px) {
+  #nav-right a {
+    margin-left: 2.4rem;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   #side-menu-icon {
     display: block;
     float: right;
+    z-index: 3;
   }
 
   #side-menu-icon-clicked {
@@ -91,7 +99,7 @@
     display: flex;
     flex-direction: column-reverse;
     z-index: 1;
-    margin-left: 20%;
+    margin-left: 23%;
   }
 
   #nav-right-side a {
@@ -107,7 +115,7 @@
   }
 
   #navbar {
-    margin-left: -2rem;
+    margin-left: -1.5rem;
     margin-right: -2rem;
   }
 
@@ -125,8 +133,18 @@
   #nav-content-side {
     display: flex;
     width: 100%;   /*could change to 80%*/
-    padding: 5rem 6.25rem 5rem 6.25rem;
+    padding: 3rem 0rem 6.25rem 3rem;
     /* justify-content: space-between; */
+  }
+
+  #nav-content {
+    /* padding: 3rem 3rem 6.25rem 3rem */
+    padding: 3rem 0rem 6.25rem 0rem;
+    width: 86%;;
+  }
+
+  #nav-left img {
+    height: 2.86275rem;
   }
 
   #half-bg-side {
@@ -139,10 +157,20 @@
     top: 0;
   }
 
+  #half-bg-other-side {
+    left: 0;
+    top: 0;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.34);
+    padding: 30%;
+    width: 100vw;
+  }
+
   #nav-button-row {
     display: flex;
     justify-content: space-between;
-    width: 45vw;
+    width: 44vw;
     align-items: center;
     padding-bottom: 1.3rem;
   }
@@ -156,4 +184,50 @@
   }
 }
 
+@media only screen and (max-width: 830px) {
+  #nav-right-side {
+    margin-left: 17%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  #nav-right-side {
+    margin-left: 12%;
+  }
+
+  #nav-left img {
+    width: 90%;
+  }
+
+  #half-bg-side {
+    padding: 28%;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  #nav-right-side {
+    margin-left: 6%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  /* #nav-button-row {
+    width: 50vw;
+  } */
+  #nav-right-side {
+    margin-left: 4%;
+  }
+
+  #nav-right-side a {
+    font-size: 0.875rem;
+  }
+
+  #nav-right-side #buttons button{
+    font-size: 0.875rem;
+  }
+
+  #half-bg-side {
+    padding: 25%;
+  }
+}
   /* for smaller screen size make sure to adjust padding around entire navbar and also padding on half bg side like esp below 800px*/

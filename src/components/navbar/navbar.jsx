@@ -57,6 +57,8 @@ const Navbar = () => {
     <div id={isClicked ? "navbar" : "navbar-with-side-menu"}>
     {/* will need to add is-clicked nav-content so it goes back to row orientation */}
     <section id={isClicked ? "half-bg" : "half-bg-side"}></section>
+    <section id={isClicked ? "half-bg" : "half-bg-other-side"}></section>
+
       <div id={isClicked ? "nav-content" : "nav-content-side"}>
         <div id='nav-left'>
           {/* add logo + link to home*/}

@@ -7,6 +7,7 @@
   /* width: 100vw; 100% of the viewport width */
   /* height: 100vh; */
   padding-top: 0px;
+  align-items: center
 }
 
 #tedx-intro {
@@ -18,10 +19,12 @@
   width: 100vw;
   mix-blend-mode: exclusion;
   height: 72.25rem;
+  align-items: center;
 }
 
 #intro-top {
-  align-self: center;
+  /* align-self: center; */
+  width: 70%;
 }
 
 #intro-bottom {
@@ -40,7 +43,7 @@
 }
 
 #intro-bottom img {
-  width: 50.75rem;
+  width: 54%;
   height: 9.625rem;
 }
 
@@ -71,6 +74,8 @@
   gap: 12.5rem;
   margin-top: 57px;
   margin-bottom: 12.5rem;
+
+  /* width: 90%; */
 }
 
 #landing-content h1 {
@@ -85,11 +90,17 @@
   flex-direction: column;
   align-items: center;
   gap: 2.5rem;
+
+  /* width: 100%; */
 }
+
 
 #impact-numbers {
   display: flex;
   align-items: flex-start;
+  justify-content: space-between;
+
+  /* width: 86%; */
   gap: 11.25rem;
 }
 
@@ -113,6 +124,10 @@
 
 #lives-impacted h2 {
   color: #FF2B06;
+}
+
+#upcoming-events {
+  display: none;
 }
 
 #talk-videos {
@@ -162,4 +177,140 @@
 
 #team-card-right p {
   font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 1530px) {
+  /* #impact-numbers {
+    gap: 7.25rem;
+  } */
+  #talk-videos iframe {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  #intro-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  #intro-bottom img {
+    width: 65%;
+    /* height: 3.15069rem; */
+  }
+
+  #tedx-intro h1 {
+    font-size: 3rem;
+  }
+
+  #landing-about {
+    width: fit-content;
+  }
+
+  #intro-top {
+    padding-top: 6.25rem;
+    width: 86%;
+  }
+
+  #tedx-intro  {
+    height: 50rem;
+  }
+
+  /* #impact-numbers {
+    gap: 7.25rem;
+  } */
+
+  #landing-content {
+    width: 100%;
+  }
+
+  #upcoming-events, #impact, #highlighted-talks, #join-our-team {
+    width: 100%;
+  }
+
+  #impact-numbers {
+    width: 97%;
+    gap: 0rem;
+  }
+
+  #talk-videos {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #talk-videos iframe {
+    width: 802px;
+    height: 475px;
+  }
+
+  #landing-content {
+    gap: 10rem;
+  }
+
+  #join-our-team {
+    padding-top: 85rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #intro-bottom img {
+    height: 6rem;
+  }
+
+  .impact-number-pair h2 {
+    font-size: 3rem;
+  }
+
+
+  .impact-number-pair {
+    gap: 1rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #intro-bottom img {
+    width: 16.61288rem;
+    height: 3.15069rem;
+  }
+
+  #tedx-intro h1 {
+    font-size: 1.25rem;
+  }
+
+  #tedx-intro {
+    height: 40rem;
+  }
+
+  #landing-about p {
+    font-size: 1rem;
+  }
+
+  .impact-number-pair p {
+    font-size: 0.875rem;
+  }
+
+  .impact-number-pair h2 {
+    font-size: 2rem;
+  }
+
+  #landing-content h1 {
+    font-size: 2rem;
+  }
+
+
+}
+
+@media only screen and (max-width: 375px) {
+  #landing-about p {
+    font-size: 0.875rem;
+  }
+
+  #landing-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .impact-number-pair p {
+    font-size: 0.75rem;
+  }
 }
