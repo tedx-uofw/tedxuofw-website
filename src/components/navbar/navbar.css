@@ -13,7 +13,7 @@
 
 #nav-content {
   display: flex;
-  width: 100%;   /*could change to 80%*/
+  width: 100%;
   padding: 5rem 6.25rem 5rem 6.25rem;
   justify-content: space-between;
   align-items: center;
@@ -26,7 +26,6 @@
 
 #nav-left img {
   width: 12.32706rem;
-  /* height: 3rem; */
   flex-shrink: 0;
 }
 
@@ -34,7 +33,6 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  /* gap: 3.75rem; */
 }
 
 #nav-right a {
@@ -132,13 +130,11 @@
 
   #nav-content-side {
     display: flex;
-    width: 100%;   /*could change to 80%*/
-    padding: 3rem 0rem 6.25rem 3rem;
-    /* justify-content: space-between; */
+    width: 100%;
+    padding: 2rem 0rem 6.25rem 3rem;
   }
 
   #nav-content {
-    /* padding: 3rem 3rem 6.25rem 3rem */
     padding: 3rem 0rem 6.25rem 0rem;
     width: 86%;;
   }
@@ -211,9 +207,6 @@
 }
 
 @media only screen and (max-width: 500px) {
-  /* #nav-button-row {
-    width: 50vw;
-  } */
   #nav-right-side {
     margin-left: 4%;
   }
@@ -230,4 +223,4 @@
     padding: 25%;
   }
 }
-  /* for smaller screen size make sure to adjust padding around entire navbar and also padding on half bg side like esp below 800px*/
+

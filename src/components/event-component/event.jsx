@@ -22,8 +22,8 @@ const Event = ({title, name, details, description, image, eventLink}) => {
             <img src={icon} alt='icon'/>
             <p>{title}</p>
           </section>
-          <h1 id='event-name'>{name}</h1>
-          <h2 id='event-details'>{details}</h2>
+          <h2 id='event-name'>{name}</h2>
+          <h3 id='event-details'>{details}</h3>
           <hr id='event-hr' width="100%" size="4"></hr>
           <p id='event-description'>{description}</p>
           <Button

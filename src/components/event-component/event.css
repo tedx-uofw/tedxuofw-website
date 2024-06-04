@@ -62,3 +62,63 @@
   margin-top: auto;
   margin-bottom: auto;
 }
+
+
+@media only screen and (max-width: 1530px) {
+  .event-img {
+    width: 60%;
+    height: 30%;
+  }
+
+  #event-card {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  #event-card {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .event-img {
+    width: 100%;
+  }
+
+  #event-info {
+    margin-left: 0px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  #event-description, #event-details {
+    font-size: 1rem;
+  }
+
+  #event-name {
+    font-size: 2rem;
+  }
+
+  #event-header img {
+    width: 2.17944rem;
+    height: 1.45294rem;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  #event-description, #event-details {
+    font-size: 0.875rem;
+  }
+
+  #event-name {
+    font-size: 1.5rem;
+  }
+
+  #event-header img {
+    width: 1.25rem;
+    height: 0.83331rem;
+  }
+}

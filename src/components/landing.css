@@ -3,9 +3,6 @@
   font-family: "Plus Jakarta Sans";
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
-  /* width: 100vw; 100% of the viewport width */
-  /* height: 100vh; */
   padding-top: 0px;
   align-items: center
 }
@@ -23,7 +20,6 @@
 }
 
 #intro-top {
-  /* align-self: center; */
   width: 70%;
 }
 
@@ -74,8 +70,6 @@
   gap: 12.5rem;
   margin-top: 57px;
   margin-bottom: 12.5rem;
-
-  /* width: 90%; */
 }
 
 #landing-content h1 {
@@ -90,8 +84,7 @@
   flex-direction: column;
   align-items: center;
   gap: 2.5rem;
-
-  /* width: 100%; */
+  width: 100%;
 }
 
 
@@ -99,8 +92,6 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-
-  /* width: 86%; */
   gap: 11.25rem;
 }
 
@@ -134,7 +125,8 @@
   display: flex;
   height: 372.955px;
   align-items: flex-start;
-  gap: 2.75rem;
+  width: 100%;
+  justify-content: space-around;
 }
 
 .video-info-pair p {
@@ -157,7 +149,7 @@
 
 #team-card {
   display: flex;
-  width: 91.875rem;
+  max-width: 91.875rem;
   align-items: center;
   gap: 2.5rem;
 }
@@ -166,7 +158,6 @@
   width: 64.04331rem;
   height: 34.35113rem;
 }
-
 
 #team-card-right {
   display: flex;
@@ -180,11 +171,31 @@
 }
 
 @media only screen and (max-width: 1530px) {
-  /* #impact-numbers {
-    gap: 7.25rem;
-  } */
+
   #talk-videos iframe {
     width: 100%;
+    height: 16rem;
+  }
+
+  .video-info-pair {
+    width: 30%;
+  }
+
+  #team-card img {
+    width: 60%;
+    height: 30%;
+  }
+
+  #intro-top {
+    width: 80%;
+  }
+
+  #team-card-right p {
+    font-size: 1.2rem;
+  }
+
+  #landing-content {
+    width: 130%;
   }
 }
 
@@ -196,8 +207,7 @@
   }
 
   #intro-bottom img {
-    width: 65%;
-    /* height: 3.15069rem; */
+    width: 70%;
   }
 
   #tedx-intro h1 {
@@ -217,12 +227,9 @@
     height: 50rem;
   }
 
-  /* #impact-numbers {
-    gap: 7.25rem;
-  } */
-
   #landing-content {
-    width: 100%;
+    width: 98%;
+    margin-bottom: 10.5rem;
   }
 
   #upcoming-events, #impact, #highlighted-talks, #join-our-team {
@@ -230,26 +237,45 @@
   }
 
   #impact-numbers {
-    width: 97%;
+    width: 86%;
     gap: 0rem;
   }
 
   #talk-videos {
     display: flex;
     flex-direction: column;
+    height: fit-content;
+    width: 97%;
   }
 
   #talk-videos iframe {
-    width: 802px;
-    height: 475px;
+    width: 100%;
+    height: 548px;
   }
 
   #landing-content {
     gap: 10rem;
   }
 
-  #join-our-team {
-    padding-top: 85rem;
+  .video-info-pair {
+    width: 100%;
+    height: 100%;
+  }
+
+  #team-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 97%;
+    justify-content: center;
+  }
+
+  #team-card-right {
+    align-items: center;
+  }
+
+  #team-card img {
+    width: 100%;
   }
 }
 
@@ -261,7 +287,6 @@
   .impact-number-pair h2 {
     font-size: 3rem;
   }
-
 
   .impact-number-pair {
     gap: 1rem;
@@ -294,15 +319,30 @@
     font-size: 2rem;
   }
 
+  #impact-numbers {
+    width: 100%;
+  }
+
+  #talk-videos iframe {
+    height: 20rem;
+  }
+
   #landing-content h1 {
     font-size: 2rem;
   }
 
+  #landing-content {
+    gap: 7.5rem;
+    margin-bottom: 8.5rem;
+  }
 
+  #upcoming-events, #impact, #highlighted-talks, #join-our-team {
+    gap: 2rem;
+  }
 }
 
 @media only screen and (max-width: 375px) {
-  #landing-about p {
+  #landing-about p, .video-info-pair p {
     font-size: 0.875rem;
   }
 
@@ -312,5 +352,26 @@
 
   .impact-number-pair p {
     font-size: 0.75rem;
+  }
+
+  #team-card-right p {
+    font-size: 1rem;
+  }
+
+  #landing-content {
+    gap: 6.25rem;
+    margin-bottom: 6.5rem;
+  }
+
+  #talk-videos iframe {
+    height: 16rem;
+  }
+
+  .video-info-pair {
+    gap: 0.5rem;
+  }
+
+  #upcoming-events, #impact, #highlighted-talks, #join-our-team {
+    gap: 1.5rem;
   }
 }
