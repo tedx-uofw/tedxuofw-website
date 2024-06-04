@@ -16,8 +16,9 @@
 
 .faq-header {
     text-align: center;
-    margin-top: 200px;
+    /* margin-top: 200px; */
     margin-bottom: 120px;
+    padding-top: 200px;
     color: #FFFAFA;
 }
 
