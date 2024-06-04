@@ -22,19 +22,18 @@ const about = () => {
       {/* TEDXUOFW */}
       <div id="tedxuofw" class="bar">
         <div class="about-col">
-          <img src={tedxuofw_logo} alt="Logo of TEDxUofW" id="logo"/>
-              <p>TEDxUofW Lorem ipsum dolor sit amet consectetur. Eget lorem pulvinar cras fermentum vulputate eget et. 
-                Eget tortor dictum amet morbi arcu adipiscing varius. Lacinia dis purus quam congue lacus ornare adipiscing amet. 
-                Pellentesque nunc etiam amet aliquet vulputate dui aliquet ullamcorper volutpat. Lorem ipsum dolor sit amet consectetur. 
-                Eget lorem pulvinar cras fermentum vulputate eget et. Eget tortor dictum amet morbi arcu adipiscing varius.</p>
+          <img src={tedxuofw_logo} alt="Logo of TEDxUofW" class="about-logo"/>
+              <p>TEDxUofW was established to bring inspirational and informative TED 
+                style talks to the University of Washington. Since 2012, our student-run organization 
+                has sought to give amazing speakers a receptive audience to share their passions with.</p>
             <div class="buttons">
               <Button 
                 title = 'JOIN THE TEAM' 
-                link = ''
+                link = 'https://forms.office.com/r/y0m8JQrVL9'
               />
               <Button 
                 title = 'NOMINATE A SPEAKER' 
-                link = ''
+                link = 'https://forms.office.com/r/DN6xmj6Lhh'
               />
             </div>
         </div>
@@ -51,11 +50,15 @@ const about = () => {
               <p>Location: <span class="white">New York, NY</span></p>
             </div>          
           <div class="bar">
-            <img src={tedx_logo} alt="Logo of TED" id="logo"></img>
-                <p>TEDxUofW Lorem ipsum dolor sit amet consectetur. Eget lorem pulvinar cras fermentum vulputate eget et. 
-                  Eget tortor dictum amet morbi arcu adipiscing varius. Lacinia dis purus quam congue lacus ornare adipiscing amet. 
-                  Pellentesque nunc etiam amet aliquet vulputate dui aliquet ullamcorper volutpat. Lorem ipsum dolor sit amet consectetur. 
-                  Eget lorem pulvinar cras fermentum vulputate eget et. Eget tortor dictum amet morbi arcu adipiscing varius.</p>
+            <img src={tedx_logo} alt="Logo of TED" class="about-logo"></img>
+                <p>In the spirit of ideas worth spreading, TEDx is a program of local, 
+                  self-organized events that bring people together to share a TED-like experience.
+                  At a TEDx event, TED Talks video and live speakers combine to spark deep discussion 
+                  and connection. These local, self-organized events are branded TEDx, At a TEDx event, 
+                  TED Talks video and live speakers combine to spark deep discussion and connection. 
+                  These local, self-organized events are branded TEDx, where x = independently organized TED event.
+                  The TED Conference provides general guidance for the TEDx program, but individual 
+                  TEDx events are self-organized.</p>
                 <Button 
                   title = 'TEDX WEBSITE' 
                   link = 'https://www.ted.com/about/programs-initiatives/tedx-program'
@@ -69,11 +72,15 @@ const about = () => {
             <p>Location: <span class="white">New York, NY</span></p>
           </div>
           <div class="bar">
-            <img src={ted_logo} alt="Logo of TED" id="logo"/>
-                <p>TEDxUofW Lorem ipsum dolor sit amet consectetur. Eget lorem pulvinar cras fermentum vulputate eget et. 
-                  Eget tortor dictum amet morbi arcu adipiscing varius. Lacinia dis purus quam congue lacus ornare adipiscing amet. 
-                  Pellentesque nunc etiam amet aliquet vulputate dui aliquet ullamcorper volutpat. Lorem ipsum dolor sit amet consectetur. 
-                  Eget lorem pulvinar cras fermentum vulputate eget et. Eget tortor dictum amet morbi arcu adipiscing varius.</p>
+            <img src={ted_logo} alt="Logo of TED" class="about-logo"/>
+                <p>TED is on a mission to discover and spread ideas that spark imagination, embrace possibility 
+                  and catalyze impact. Our organization is devoted to curiosity, reason, wonder and the pursuit 
+                  of knowledge — without an agenda. We welcome people from every discipline and culture who seek 
+                  a deeper understanding of the world and connection with others, and we invite everyone to engage 
+                  with ideas and activate them in your community. TED began in 1984 as a conference where Technology, 
+                  Entertainment and Design converged, but today it spans a multitude of worldwide communities and 
+                  initiatives exploring everything from science and business to education, arts and global issues. 
+                  TED is owned by a nonprofit, nonpartisan foundation. Our aim is to help create a future worth pursuing for all.</p>
                 <Button 
                   title = 'TED WEBSITE' 
                   link = 'https://www.ted.com/'
@@ -93,7 +100,7 @@ const about = () => {
                 and the value for the audience by helping each of us on the stage today do our best work.</p>
               <Button 
                 title = 'LINKEDIN' 
-                link = ''
+                link = 'https://www.linkedin.com/in/ro-verdeja/'
               />    
             </div>
         </div>

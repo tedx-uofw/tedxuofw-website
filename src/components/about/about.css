@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
-
+#about {
+  padding-top: 10rem;
+}
 #header {
   color: #FFFAFA;
   text-align: center;
@@ -9,7 +11,6 @@
   font-weight: 500;
   line-height: normal;
   padding-bottom: 7.5rem;
-  margin-top: 10rem;
 }
 
 .location {
@@ -35,8 +36,8 @@
   gap: 2.5rem;
 }
 
-#logo {
-  max-width: 30rem;
+.about-logo {
+  max-width: 100%;
   height: auto;
   padding-bottom: 1.5rem;
 }
@@ -89,17 +90,16 @@
   gap: 3rem;
 }
 
+.carousel {
+  padding-top: 2rem;
+}
 /* Responsive CSS for tablets: */
 @media screen and (max-width: 1024px) {
   .about-row, #tedxuofw {
     display: block !important;
   }
-  #about {
-    margin: 1.25rem;
-  }
-  #logo {
-    margin-top: 2rem;
-    max-width: 100%;
+  .about-logo {
+    padding-top: 2rem;
   }
   .carousel img {
     display: block;
@@ -113,7 +113,7 @@
     padding-bottom: 2rem;
   }
   #tedx, #ted, #ro .about-row .about-col {
-    padding-top: 4rem;
+    padding-top: 3.75rem;
   }
   #ro {
     padding-top: 4rem;

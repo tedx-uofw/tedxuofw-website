@@ -14,7 +14,7 @@ const footer = () => {
           {/* Top half of footer */}
           <div id="top">
             {/* Logo */}
-            <a href=""><img src={logo} alt="Logo of TEDxUofW" id="logo" href=""></img></a>
+            <a href=""><img src={logo} alt="Logo of TEDxUofW" id="footer-logo" href=""></img></a>
 
              {/* Sitemap */}
              <div id="pages">
@@ -36,10 +36,11 @@ const footer = () => {
           <div id="bottom" class ="">
             {/* Copyright */}
             <p id="copyright">©TEDxUofW 2024 | This independent TEDx event is operated under license from TED.</p>
+            
+            <div class="mobile-only"><p>CONNECT WITH US:</p></div>
 
             {/* Logos */}
             <div id="icons">            
-            <div class="mobile-only"><p>CONNECT WITH US:</p></div>
               {/* Mail */}
               <a href="mailto:tedxuofw@uw.edu"><img src={email}></img></a>
               {/* Facebook */}

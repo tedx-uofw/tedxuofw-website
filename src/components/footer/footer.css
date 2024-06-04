@@ -7,7 +7,7 @@
   padding: 2rem 6.25rem;
 }
 
-#logo {
+#footer-logo {
   max-width: 22rem;
   height: auto;
   flex-shrink: 0;
@@ -129,9 +129,6 @@
   #pages a {
     gap: 1.5rem;
   }
-  #icons {
-    order: 4;
-  }
   #copyright {
     order: -1 !important;
     font-size: 1rem;
@@ -139,8 +136,9 @@
   .mobile-only {
     display: visible;
     margin-bottom: 0;
+    font-size: 0.75rem;
   }
-  #logo {
+  #footer-logo {
     max-width: 11rem;
   }
 }
