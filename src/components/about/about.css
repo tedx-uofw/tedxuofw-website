@@ -62,7 +62,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 1.5rem;
+  /* gap: 1.5rem; */
   align-self: stretch;
   display: flex;
   /* padding-top: 12.5rem; */
@@ -177,6 +177,9 @@
     display: block;
   }
 
+  #about p {
+    font-size: 16px;
+  }
 
   .about-row, #tedxuofw {
     display: block !important;
@@ -196,7 +199,7 @@
     padding-bottom: 2rem;
   }
   #tedx, #ted, #ro .about-row .about-col {
-    padding-top: 3.75rem;
+    padding-top: 100px;
   }
   #ro {
     padding-top: 4rem;
@@ -260,4 +263,22 @@
     font-size: 16px;
     margin-top: 10px;
   }
+
+  .buttons {
+    gap: 24px;
+  }
 }  
+
+@media only screen and (max-width: 450px) {
+  #about p {
+    font-size: 14px;
+  }
+
+  .buttons {
+    gap: 20px;
+  }
+
+  #tedx, #ted, #ro .about-row .about-col {
+    padding-top: 80px;
+  }
+}
