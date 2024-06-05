@@ -28,7 +28,7 @@ function App() {
               <Route path="/past-events" element = { <PastEvents /> } />
               <Route path="/faq" element = { <FAQ /> } />
               <Route path="*" element={<div> 404 Not Found </div>}></Route>
-              <Route path="/admin" element={ <Admin /> }></Route>
+              {/* <Route path="/admin" element={ <Admin /> }></Route> */}
             </Routes>
             <Footer />
           </div>
