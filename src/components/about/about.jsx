@@ -7,10 +7,16 @@ import tedx_logo from '../../assets/tedx.png'
 import ted_logo from '../../assets/ted.png'
 import tedxuofw from '../../assets/tedxuofw.png'
 import ro from '../../assets/ro 1.svg'
+import { Helmet } from "react-helmet";
 
 const about = () => {
   return (
     <div id="about">
+      <Helmet>
+        <title>About TEDxUofW Club</title>
+        <meta name="description" content="View and learn about the TEDxUofW club" />
+        <meta name="keywords" content="TEDxUofW, tedxuofw, tedx, ted, Tedx, Ted, uw, University of Washington, ted talks, tedx talk, tedx conference, uw rso, join the team, nominate a speaker, history, Ro Verdeja, ideas worth spreading"/>
+      </Helmet>
       {/* TOP */}
       <h1 id="header">ABOUT</h1>
       <div class="location">

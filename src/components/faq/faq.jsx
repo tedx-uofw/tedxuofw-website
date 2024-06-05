@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Button from "../button/button.jsx";
 import './faq.css';
-import downArrow from '../../assets/downArrow.svg'
+import downArrow from '../../assets/downArrow.svg';
+import { Helmet } from "react-helmet";
 
 const Faq = () => {
   const [isActive, setIsActive] = useState(Array(18).fill(false));
@@ -38,6 +39,12 @@ const Faq = () => {
 
   return (
     <div id="faq">
+      <Helmet>
+        <title>TEDxUofW Club Frequently Asked Questions</title>
+        <meta name="description" content="Learn more about TEDxUofW through exploring frequently asked questions" />
+        <meta name="keywords" content="TEDxUofW, tedxuofw, tedx, ted, Tedx, Ted, uw, University of Washington, ted talks, tedx talk, tedx conference, uw rso, join the team, nominate a speaker, ideas worth spreading, general frequently asked questions, speaker frequently asked questions, sponsor frequently asked questions, speaker applications, volunteer, questions, where, what"/>
+      </Helmet>
+
       <div className="faq-header hide-faq-title">
         <h1>Frequently Asked Questions</h1>
       </div>

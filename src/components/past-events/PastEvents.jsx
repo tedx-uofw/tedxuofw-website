@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './PastEvents.css'
+import { Helmet } from "react-helmet";
 
 import Dropdown from './DropdownComp'
 import CreateBox from './createBox'
@@ -32,6 +33,11 @@ const PastEvents = () => {
 
   return (
     <div className='past-events-container'>
+      <Helmet>
+        <title>TEDxUofW Past Events</title>
+        <meta name="description" content="View and learn about all the past conferences hosted by the TEDxUofW club, including each speaker and performer" />
+        <meta name="keywords" content="TEDxUofW, tedxuofw, uw, University of Washington, ted talks, tedx talk, tedx conference, speakers, performers, watch ted talk"/>
+      </Helmet>
       <div className='events-ctr'>
         <div className='past-events-title'>
           <h1 className='events-heading'>PAST EVENTS</h1>

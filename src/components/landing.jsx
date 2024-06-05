@@ -3,6 +3,7 @@ import './landing.css';
 import Event from './event-component/event.jsx';
 import Button from './button/button';
 import downArrow from '../assets/downArrow.svg';
+import { Helmet } from "react-helmet";
 // import team from '../assets/landing-team.png';
 // import upcomingEvent1 from '../assets/upcomingEvent1.png';
 // import logo from '../assets/tedx-logo.png'
@@ -18,6 +19,11 @@ const landing = () => {
 
   return (
     <div id='landing'>
+      <Helmet>
+        <title>TEDxUofW Club Repository Website</title>
+        <meta name="description" content="View and learn about the TEDxUofW club" />
+        <meta name="keywords" content="TEDxUofW, tedxuofw, uw, University of Washington, ted talks, tedx talk, tedx conference, highlighted talks, uw rso"/>
+      </Helmet>
 
       <div id='tedx-intro'>
         <div id='intro-top'>

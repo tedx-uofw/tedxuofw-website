@@ -1,5 +1,6 @@
 import React from 'react'
 import './contact.css'
+import { Helmet } from "react-helmet";
 
 /* Logos */
 import email from '../../assets/social-media/email.svg'
@@ -16,6 +17,11 @@ import Form from './Form'
 const Contact = () => {
   return (
     <div className='contact-container'>
+      <Helmet>
+        <title>Contact TEDxUofW Club</title>
+        <meta name="description" content="Contact the TEDxUofW team and stay updated with social media accounts" />
+        <meta name="keywords" content="TEDxUofW, tedxuofw, tedx, ted, Tedx, Ted, uw, University of Washington, ted talks, tedx talk, tedx conference, uw rso, join the team, ideas worth spreading, facebook, email, instagram, tiktok, linkedin, donate, venmo, zelle, paypal, impact on community, support, upcoming events"/>
+      </Helmet>
       <div className='contact-us-container'>
         <h1 className='contact-heading'>CONTACT US</h1>
         <hr className='contact-hr'></hr>
