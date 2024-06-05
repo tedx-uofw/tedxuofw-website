@@ -8,7 +8,6 @@ import ted_logo from '../../assets/ted.png'
 import tedxuofw from '../../assets/tedxuofw.png'
 import ro from '../../assets/ro 1.svg'
 
-
 const about = () => {
   return (
     <div id="about">
@@ -18,7 +17,8 @@ const about = () => {
         <p>Founded: <span class="white">2012</span></p>
         <p>Location: <span class="white">Seattle, WA</span></p>
       </div>
-      <div className="tedxuofw">
+
+      <div className="tedxuofw hide-tablet">
         <div className="uofw-info">
           <img src={tedxuofw_logo} alt="Logo of TEDxUofW"/>
           <p>TEDxUofW was established to bring inspirational and informative TED 
@@ -43,7 +43,32 @@ const about = () => {
       </div>
 
 
-
+      {/* TEDXUOFW */}
+      <div className="hide-desktop">
+        <div id="tedxuofw" className="bar">
+          <div className="about-col uofw-about">
+            <img src={tedxuofw_logo} alt="Logo of TEDxUofW" className="about-logo"/>
+                <p>TEDxUofW was established to bring inspirational and informative TED 
+                  style talks to the University of Washington. Since 2012, our student-run organization 
+                  has sought to give amazing speakers a receptive audience to share their passions with.</p>
+              <div class="buttons">
+                <Button 
+                  title = 'JOIN THE TEAM' 
+                  link = 'https://forms.office.com/r/y0m8JQrVL9'
+                />
+                <Button 
+                  title = 'NOMINATE A SPEAKER' 
+                  link = 'https://forms.office.com/r/DN6xmj6Lhh'
+                />
+              </div>
+          </div>
+          <div class="carousel about-col uofw-about-img">
+            <img src = {tedxuofw}/>
+            <p>Conference (2020)</p>
+          </div>
+        </div>
+      </div>
+      
 
       {/* TEDX, TED */}
       <div class="about-row">
@@ -74,7 +99,7 @@ const about = () => {
             <p>Founded: <span class="white">1984</span></p>
             <p>Location: <span class="white">New York, NY</span></p>
           </div>
-          <div class="bar">  
+          <div class="bar">
             <img src={ted_logo} alt="Logo of TED" class="about-logo"/>
                 <p>TED is on a mission to discover and spread ideas that spark imagination, embrace possibility 
                   and catalyze impact. Our organization is devoted to curiosity, reason, wonder and the pursuit 

@@ -88,18 +88,18 @@ const landing = () => {
             </section>
 
             <section className='video-info-pair'>
-            <iframe title='bobatalks' src='https://www.youtube.com/embed/xDMO1d6gaWU?si=Tgeo992W_MKo-Tdu'></iframe>
+            <iframe title='The Purpose of Daydreaming' src='https://www.youtube.com/embed/GuROppyLBKA?si=pmCGGaNNQ4IgTtLO'></iframe>
               <section>
-                <p>JEFF NQUYEN</p>
-                <p>Why your career needs a North Star</p>
+                <p>EMILY LAGO ANDERSON</p>
+                <p>The Purpose of Daydreaming</p>
               </section>
             </section>
 
             <section className='video-info-pair'>
-            <iframe title='bobatalks' src='https://www.youtube.com/embed/xDMO1d6gaWU?si=Tgeo992W_MKo-Tdu'></iframe>
+            <iframe title='bobatalks' src='https://www.youtube.com/embed/xfubAfgkUzE?si=EHvCYpe3sAnyK0ha'></iframe>
               <section>
-                <p>JEFF NQUYEN</p>
-                <p>Why your career needs a North Star</p>
+                <p>ZARYA RUBIN, MD</p>
+                <p>The one step to alleviating burnout</p>
               </section>
             </section>
           </div>

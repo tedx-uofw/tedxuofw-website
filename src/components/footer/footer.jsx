@@ -11,6 +11,7 @@ const footer = () => {
   return (
 <div id="footer">
         <footer>
+          <div className='testing'>
           {/* Top half of footer */}
           <div id="top">
             {/* Logo */}
@@ -18,13 +19,13 @@ const footer = () => {
 
              {/* Sitemap */}
              <div id="pages">
-              <div class="section">
-                <div class="footer-row">
-                  <div class="footer-col">
+              <div className="section">
+                <div className="footer-row">
+                  <div className="footer-col">
                     <a href="/past-events">PAST EVENTS</a>
                     <a href="/about">ABOUT</a>
                   </div>
-                  <div class="footer-col">
+                  <div className="footer-col">
                     <a href="/faq">FAQ</a>
                     <a href="/contact">CONTACT US</a>
                   </div>
@@ -33,11 +34,11 @@ const footer = () => {
             </div>
           </div>
           {/* Second half of footer */}
-          <div id="bottom" class ="">
+          <div id="bottom">
             {/* Copyright */}
             <p id="copyright">©TEDxUofW 2024 | This independent TEDx event is operated under license from TED.</p>
             
-            <div class="mobile-only"><p>CONNECT WITH US:</p></div>
+            <div className="mobile-only"><p>CONNECT WITH US:</p></div>
 
             {/* Logos */}
             <div id="icons">            
@@ -52,6 +53,7 @@ const footer = () => {
               {/* LinkedIn */}
               <a href="https://www.linkedin.com/company/tedxuofw/mycompany/"><img src={linkedin}></img></a>
             </div>
+          </div>
           </div>
         </footer>
       </div>

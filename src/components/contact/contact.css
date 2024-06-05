@@ -1,5 +1,6 @@
 .contact-container {
-    padding-top: 10rem;
+    padding-top: 12.5vw;
+    padding-bottom: 8.333vw;
 }
 
 .contact-heading {
@@ -7,7 +8,7 @@
     margin-bottom: 0rem;
 }
 .stay-updated-ctr {
-    width: 30.313rem;
+    width: 25.26vw;
 }
 .contact-form-container {
     display: flex;

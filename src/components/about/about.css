@@ -2,6 +2,15 @@
 #about {
   padding-top: 10rem;
 }
+
+#about p {
+  color: #A9A9A9;
+}
+
+.hide-desktop {
+  display: none;
+}
+
 #header {
   color: #FFFAFA;
   text-align: center;
@@ -28,7 +37,6 @@
 
 .bar {
   border-top: 1px solid #A9A9A9;
-  width: 29.063vw;
 }
 
 .buttons {
@@ -57,6 +65,7 @@
   gap: 1.5rem;
   align-self: stretch;
   display: flex;
+  /* padding-top: 12.5rem; */
 }
 #ro {
   padding-top: 12.5rem;
@@ -69,9 +78,7 @@
 
 .about-row {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  align-self: stretch;
+  gap: 12.5rem;
 }
 
 .carousel img, #tedx img, #ted img{
@@ -93,15 +100,84 @@
 }
 
 .carousel {
-  /* width: 20vw; */
   padding-top: 2rem;
 }
 
-.carousel img {
-  width: 31.875vw;
+.uofw-about p {
+  color: #A9A9A9;
+  font-size: 20px;
+  font-weight: 400;
 }
+
+.uofw-about-img p {
+  color: #A9A9A9;
+  text-align: center;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.tedxuofw {
+  border-top: 1px solid #A9A9A9;
+  padding-top: 32px;
+  margin-bottom: 200px;
+  display: flex;
+}
+
+.uofw-info {
+  margin-right: auto;
+  /* width: 725px; */
+  width: 35vw;
+}
+
+.uofw-info img {
+  width: 25vw;
+}
+
+.uofw-info p {
+  margin: 24px 0;
+  color: #A9A9A9;
+  font-size: 20px;
+  font-weight: 400; 
+}
+
+.uofw-buttons {
+  display: flex;
+}
+
+.uofw-join-button {
+  margin-right: 24px;
+}
+
+.uofw-img {
+  margin: auto 0;
+}
+
+.uofw-img img {
+  /* width: 612px; */
+  width: 30vw;
+}
+
+.uofw-img p {
+  color: #A9A9A9;
+  text-align: center;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
 /* Responsive CSS for tablets: */
 @media screen and (max-width: 1024px) {
+  .hide-tablet {
+    display: none;
+  }
+
+  .hide-desktop {
+    display: block;
+  }
+
+
   .about-row, #tedxuofw {
     display: block !important;
   }
@@ -140,51 +216,48 @@
     border-radius: 1rem;
     max-width: 100%;
   }
+
+  .tedxuofw {
+    flex-direction: column;
+  }
+  
+  .uofw-info {
+    width: fit-content;
+    margin-right: 0;
+  }
+  
+  .uofw-info img {
+    width: fit-content;
+  }
+  
+  .uofw-info p {
+    margin: 28px 0;
+    font-size: 16px;
+  }
+  
+  .uofw-buttons {
+    display: flex;
+  }
+  
+  .uofw-join-button {
+    margin-right: 12px;
+  }
+
+  .uofw-img {
+    margin-top: 60px;
+    text-align: center;
+  }
+  
+  .uofw-img img {
+    width: fit-content;
+    /* width: 95vw; */
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  .uofw-img p {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+  }
 }  
-
-
-.tedxuofw {
-  border-top: 1px solid #A9A9A9;
-  padding-top: 32px;
-  margin-bottom: 200px;
-  display: flex;
-}
-
-.uofw-info {
-  margin-right: auto;
-  /* width: 725px; */
-  width: 35vw;
-}
-
-.uofw-info img {
-  width: 25vw;
-}
-
-.uofw-info p {
-  margin: 24px 0;
-  color: #A9A9A9;
-  font-size: 20px;
-  font-weight: 400; 
-}
-
-.uofw-buttons {
-  display: flex;
-}
-
-.uofw-join-button {
-  margin-right: 24px;
-}
-
-.uofw-img img {
-  /* width: 612px; */
-  width: 30vw;
-}
-
-.uofw-img p {
-  color: #A9A9A9;
-  text-align: center;
-  font-size: 16px;
-  font-style: italic;
-  font-weight: 400;
-  margin-top: 20px;
-}

@@ -6,6 +6,8 @@
     /* margin: 0 12.6%; */
     /* margin: 0 8%; */
     font-family: "Plus Jakarta Sans";
+    padding-top: 12.5vw;
+    padding-bottom: 8.333vw;
 }
 
 #faq h2 {
@@ -18,7 +20,7 @@
     text-align: center;
     /* margin-top: 200px; */
     margin-bottom: 120px;
-    padding-top: 200px;
+    /* padding-top: 200px; */
     color: #FFFAFA;
 }
 
