@@ -3,6 +3,7 @@ import './navbar.css'
 import Button from '../button/button'
 // import logo from '../../assets/logo.png'
 import exit from '../../assets/close.png'
+import tedLogo from '../../assets/tedxuofw.svg'
 
 const Navbar = () => {
 
@@ -62,7 +63,7 @@ const Navbar = () => {
       <div id={isClicked ? "nav-content" : "nav-content-side"}>
         <div id='nav-left'>
           {/* add logo + link to home*/}
-          <a href='./'><img src='https://firebasestorage.googleapis.com/v0/b/tedxuofw-1de88.appspot.com/o/Repo%20Website%2FLanding%2Ftedx-logo-with-text.png?alt=media&token=51302ded-3689-4147-af9e-5486655dcc0b' alt='tedx-logo'/></a>
+          <a href='./'><img src={tedLogo} alt='tedx-logo'/></a>
         </div>
         <svg id={isClicked ? "side-menu-icon" : "side-menu-icon-clicked"} onClick={() => {setClick(false)}} width="42" height="14" viewBox="0 0 42 14" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g id="Group 508">

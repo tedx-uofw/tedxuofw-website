@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './DropdownComp.css'
 import Dropdown from 'react-bootstrap/Dropdown'
+import downArrow from "../../assets/downArrow.svg"
 
 
 const DropdownComp = ({ items, onSelect }) => {
@@ -21,6 +22,7 @@ const DropdownComp = ({ items, onSelect }) => {
     <Dropdown id="dropdown" onSelect={(e) => handleSelect(e)}>
       <Dropdown.Toggle id="dropdown-basic">
         {selected != null ? selected : "View More"}
+        <img src={downArrow} className='dropdown-arrow'></img>
       </Dropdown.Toggle>
 
       <Dropdown.Menu id='dropdown-menu'>

@@ -1,5 +1,5 @@
 #create-box {
-    width: 41.75rem;
+    width: 34.792vw;
 }
 
 .box-description {
@@ -7,8 +7,8 @@
 }
 
 .box-img {
-    width: 41.75rem;
-    height: 41.75rem;
+    width: 34.792vw;
+    height: 34.792vw;
     flex-shrink: 0;
     object-fit: cover;
     padding-bottom: 20px;
@@ -21,14 +21,14 @@
 }
 
 .name-content {
-    font-size: 40px;
+    font-size: 2.083vw;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
   }
 
   .talk-title-content {
-    font-size: 24px;
+    font-size: 1.25vw;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -45,7 +45,7 @@
   .socials-box {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 1.042vw;
     justify-content: flex-start;
   }
 

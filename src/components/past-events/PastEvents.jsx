@@ -47,27 +47,29 @@ const PastEvents = () => {
             <Event title={event.title} name={event.name} details={event.details} description={event.description} image={event.imgUrl} eventLink={event.link} />
           ))}
       </div>
-
-      <div className='events-container'>
-        <h1 className='events-heading'>SPEAKERS</h1>
-        <hr className='past-events-hr'></hr>
-        <div className='boxes-ctr'>
-          {selectedYear?.speakers?.map((speaker) => (
-            <CreateBox name={speaker.name} title={speaker.title} description={speaker.description} img={speaker.imgUrl} youtubeLink={speaker.youtubeUrl} linkedinLink={speaker.linkedinUrl}/>
-          ))}
+      {selectedYear?.speakers && selectedYear.speakers.length > 0 && (
+        <div className='events-container'>
+          <h1 className='events-heading'>SPEAKERS</h1>
+          <hr className='past-events-hr'></hr>
+          <div className='boxes-ctr'>
+            {selectedYear?.speakers?.map((speaker) => (
+              <CreateBox name={speaker.name} title={speaker.title} description={speaker.description} img={speaker.imgUrl} youtubeLink={speaker.youtubeUrl} linkedinLink={speaker.linkedinUrl}/>
+            ))}
+          </div>
         </div>
+      )}
 
-      </div>
-
-      <div className='events-container'>
-        <h1 className='events-heading'>PERFORMERS</h1>
-        <hr className='past-events-hr'></hr>
-        <div className='boxes-ctr'>
-          {selectedYear?.performers?.map((performer) => (
-            <CreateBox name={performer.name} title={performer.title} description={performer.description} img={performer.imgUrl} youtubeLink={performer.youtubeUrl} linkedinLink={performer.linkedinUrl}/>
-          ))}
+    {selectedYear?.performers && selectedYear.performers.length > 0 && (
+        <div className='events-container'>
+          <h1 className='events-heading'>PERFORMERS</h1>
+          <hr className='past-events-hr'></hr>
+          <div className='boxes-ctr'>
+            {selectedYear.performers.map((performer) => (
+              <CreateBox name={performer.name} title={performer.title} description={performer.description} img={performer.imgUrl} youtubeLink={performer.youtubeUrl} linkedinLink={performer.linkedinUrl}/>
+            ))}
+          </div>
         </div>
-      </div>
+      )}
 
 
     </div>

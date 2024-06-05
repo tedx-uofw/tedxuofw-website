@@ -10,17 +10,25 @@ body,
     background-size: cover;
     background-color: #101010;
     color: #FFFAFA;;
-    padding-left: 14.063rem;
-    padding-right: 14.063rem;
+    padding-left: 11.719vw;
+    padding-right: 11.719vw;
     /* padding-top: 20rem; */
     overflow-x: hidden;
 
 }
 
-/* tablet */
-@media only screen and (max-width: 1024px) {
+
+/* @media only screen and (max-width: 1024px) {
     .App {
         padding-left: 20px;
         padding-right: 20px;
     }
 }
+
+
+@media only screen and (max-width: 450px) {
+    .App {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+} */

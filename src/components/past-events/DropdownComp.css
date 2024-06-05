@@ -16,6 +16,7 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    gap: 2.125rem;
 }
 
 /* Basic styling for the Dropdown component */
@@ -26,6 +27,7 @@
     overflow-y: scroll;
     overflow-x: hidden;
     background-color: #101010;
+    border: 1px solid #FFE9E9;
   }
 
   /* WebKit Browsers */
@@ -56,10 +58,17 @@
     font-weight: 500;
     line-height: normal;
     padding: 12px 36px;
+    border-bottom: 1px solid rgba(255, 233, 233, 0.30);
+
+
   }
 
   #dropdown-item:hover {
     background-color: #641A15;
+  }
+
+  #dropdown-basic::after {
+    display: none;
   }
 
 @media only screen and (max-width: 1024px) {
@@ -67,5 +76,21 @@
         padding: 5px 8px;
         gap: 11px;
         font-size: 16px;
+        
     }
+    /* .dropdown-arrow {
+      width: 6vw;
+    } */
+}
+
+@media only screen and (max-width: 450px) {
+  #dropdown-basic {
+      padding: 5px 8px;
+      gap: 11px;
+      font-size: 16px;
+      
+  }
+  .dropdown-arrow {
+    width: 6vw;
+  }
 }
