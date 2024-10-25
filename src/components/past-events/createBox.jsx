@@ -6,7 +6,6 @@ import linkedin from '../../assets/social-media/linkedin.svg'
 /* */
 
 const CreateBox = (props) => {
-    console.log(props)
   return (
     <section id='create-box'>
         <div className='box-content'>
