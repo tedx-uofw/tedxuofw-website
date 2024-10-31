@@ -39,8 +39,18 @@ const landing = () => {
               />
             </section>
           </div>
+
         </div>
-        <img id='down-arrow' src={downArrow} alt='down-arrow' />
+        <img 
+          id='down-arrow' 
+          src={downArrow} 
+          alt='down-arrow'
+          style={{ cursor: 'pointer' }}
+          onClick={() => { // onClick event here scrolls after arrow button is clicked
+            const scrollTo = document.getElementById('impact'); // replace w/ ID of where you want to scroll down to
+            scrollTo.scrollIntoView({ behavior: 'smooth' });
+          }}
+          />
       </div>
 
       <div id='landing-content'>

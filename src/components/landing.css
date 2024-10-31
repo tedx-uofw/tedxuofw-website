@@ -60,6 +60,11 @@
   width: 3.4375rem;
   height: 1.6875rem;
   align-self: center;
+  transition: 0.3s;
+}
+
+#down-arrow:hover {
+  transform: scale(1.3); 
 }
 
 #landing-content {
