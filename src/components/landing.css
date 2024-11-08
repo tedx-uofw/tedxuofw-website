@@ -56,14 +56,20 @@
   line-height: normal;
 }
 
+/********************** Section below belongs to the down arrow ********************/
+#down-arrow-container { 
+  position: relative; /* Prevents hitbox movement */
+  display: inline-block;
+  cursor: pointer;
+}
 #down-arrow {
   width: 3.4375rem;
   height: 1.6875rem;
   align-self: center;
   transition: 0.3s;
-  animation: upAndDown 1.5s ease-in-out infinite;
+  animation: upAndDown 1.5s infinite;
 }
-@keyframes upAndDown {
+@keyframes upAndDown { /* Vertical moving animation */
   0%, 100% {
     transform: translateY(0);
   }
@@ -71,6 +77,7 @@
     transform: translateY(-20px); /* Adjust the value to control how much it moves */
   }
 }
+/***********************************************************************************/
 
 #landing-content {
   display: inline-flex;
