@@ -74,7 +74,7 @@
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-20px); /* Adjust the value to control how much it moves */
+    transform: translateY(-20px); /* Adjust value to control how much it moves */
   }
 }
 /***********************************************************************************/
