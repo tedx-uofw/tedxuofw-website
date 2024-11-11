@@ -143,7 +143,6 @@ const about = () => {
           <img src = {ro}/>
         </div>
       </div>
-    
     </div>
   )
 }

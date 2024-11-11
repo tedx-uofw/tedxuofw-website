@@ -216,7 +216,8 @@
     order: -1;
   }
   #ro img {
-    border-radius: 1rem;
+    /* remove rounded corners for mobile screen */
+    /* border-radius: 1rem; */
     max-width: 100%;
   }
 
