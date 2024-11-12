@@ -124,15 +124,16 @@
     transition: top 0.3s;
     z-index: 2;
     margin-left: -2rem;
-    margin-right: -2rem;
+    margin-right: -2rem;  
   }
 
   #nav-content-side {
     display: flex;
     width: 0%;
-    padding: 2rem 0rem 6.25rem 3rem;
+    padding: 2rem 0rem 6.25rem 10rem; 
+    justify-content: flex-start;
   }
-
+  
   #nav-content {
     padding: 3rem 0rem 6.25rem 0rem;
     width: 86%;;
