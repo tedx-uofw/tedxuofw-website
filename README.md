@@ -12,13 +12,13 @@ TEDxUofW is a student-run club at the University of Washington in Seattle, Washi
 ## Deployment
 
 ## Running
- 1. Clone the repository:
-        - git clone https://github.com/tedx-uofw/tedxuofw-website.git
- 2. Dowload all the modules:
-        - cd tedx-uofw
-        - npm install
- 3. Start the project:
-        - npm run start 
+1. Clone the repository:
+   - git clone https://github.com/tedx-uofw/tedxuofw-website.git
+2. Dowload all the modules:
+   - cd tedx-uofw
+   - npm install
+3. Start the project:
+   - npm run start 
 
 
 
