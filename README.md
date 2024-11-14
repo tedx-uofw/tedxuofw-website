@@ -3,13 +3,19 @@ TEDxUofW is a student-run club at the University of Washington in Seattle, Washi
 
 ## Table of Contents
 - [Technologies](#technologies)
-- [Deployment](#deployment)
+- [Deploy a website](#deployment)
 - [Running] (#running)
 
 ## Technologies
 - **Tech Stack**: React, HTML, CSS, Firebase, and Bootstrap
 
-## Deployment
+## Deploy a website
+1. Login to Netlify
+2. Go to Netlify dashboard
+3. Click on "Add New Site" or If never deploy a website on Netlify a website before then click "Import from Git"
+4. Connect to the Github repository
+5. Select the main branch
+6. Make sure automatic deploys are turned on for **main** branch (Will be automatically push changes to the deployment site when the main branch changes)
 
 ## Running
 1. Clone the repository:

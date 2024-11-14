@@ -6,6 +6,7 @@ import { Helmet } from "react-helmet";
 
 const Faq = () => {
   const [isActive, setIsActive] = useState(Array(18).fill(false));
+  
 
   const toggleAccordion = (index) => {
     const newisActive = [...isActive];
