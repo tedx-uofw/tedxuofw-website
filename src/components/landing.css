@@ -59,8 +59,12 @@
 /********************** Section below belongs to the down arrow ********************/
 #down-arrow-container { 
   position: relative; /* Prevents hitbox movement */
-  display: inline-block;
-  cursor: pointer;
+  width: 3.5rem;
+  height: 4.2rem;
+  display: flex; 
+  align-items: center; /* center arrow vertically */
+  justify-content: center; /* center arrow horizontally */
+  cursor: pointer; 
 }
 #down-arrow {
   width: 3.4375rem;

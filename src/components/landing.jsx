@@ -41,16 +41,12 @@ const landing = () => {
           </div>
         </div>
 
-        <div id="down-arrow-container"> 
-          <img 
-            id='down-arrow' 
-            src={downArrow} 
-            alt='down-arrow'
-            onClick={() => { // onClick event here scrolls after arrow button is clicked
-              const scrollTo = document.getElementById('impact'); // replace w/ ID of where you want to scroll down to
-              scrollTo.scrollIntoView({ behavior: 'smooth' });
-            }}
-          />
+        <div 
+        id="down-arrow-container" 
+        onClick={() => { // onClick event here scrolls after arrow container is clicked
+        const scrollTo = document.getElementById('impact'); // replace w/ ID of where to scroll down to
+        scrollTo.scrollIntoView({ behavior: 'smooth' });}}> 
+          <img id='down-arrow' src={downArrow} alt='down-arrow'/>
         </div>
       </div> 
 
