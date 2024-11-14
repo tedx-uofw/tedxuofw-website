@@ -95,7 +95,8 @@ const Admin = () => {
         </div>
         <div>
           <h2>Add New Performer</h2>
-          <input name="name" value={newPerformer.name} onChange={(e) => handleInputChange(e, 'performer')} placeholder="Name" />
+          <input name="name" value={newPerformer.name} onChange={(e) => handleInputChange(e, 'performer')} placeholder="Name" 
+          />
           <input name="title" value={newPerformer.title} onChange={(e) => handleInputChange(e, 'performer')} placeholder="Title" />
           <input name="description" value={newPerformer.description} onChange={(e) => handleInputChange(e, 'performer')} placeholder="Description" />
           <input name="imgUrl" value={newPerformer.imgUrl} onChange={(e) => handleInputChange(e, 'performer')} placeholder="Image URL" />
