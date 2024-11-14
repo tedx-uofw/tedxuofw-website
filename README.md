@@ -5,6 +5,7 @@ TEDxUofW is a student-run club at the University of Washington in Seattle, Washi
 - [Technologies](#technologies)
 - [Deploy a website](#deployment)
 - [Running] (#running)
+- [Make changes to the Project](#changes)
 
 ## Technologies
 - **Tech Stack**: React, HTML, CSS, Firebase, and Bootstrap
@@ -26,6 +27,20 @@ TEDxUofW is a student-run club at the University of Washington in Seattle, Washi
 3. Start the project:
    - npm run start 
 
+## Make changes to the Project
+1. Create an Issue in Github:
+   - On github:
+      - Navigate to Issues tab
+      - Click on New Issue
+      - Name the issue (Be specific as possible)
+      - Click on Submit New Issue
+2. Create a Branch for that issue (there's a link within the issue on the right panel under Development which says "Create a branch" for this issue).Develop within that branch until ready to make a PR.
+   - On github:
+      - ![Step 2](/public/readme/step2.png)
+Go to Branch in Github and start PR. Add 2 Reviewers for Approval.
+4a. If changes to Main have recently happened before completing your PR, update your current branch by running "git pull origin main" in branch, then push the merge from main to branch.
+4b. If someone makes a Request for changes, address the changes and push them. Ask for re-approval
+Once you get 2 approvals and your branch is up-to-date with main, Merge Pull Request with main.
 
 
 
