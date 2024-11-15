@@ -1,70 +1,114 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# TEDxUofW Main Website
 
 ## Available Scripts
+TEDxUofW is a student-run club at the University of Washington in Seattle, Washington. Each year, our dedicated club members organize an annual event that brings professionals from various industries to the university to share their stories, insights, and expertise. This is the GitHub 
 
-In the project directory, you can run:
+## Table of Contents
+- [Technologies](#technologies)
+- [Deploy the Website](#deploy-the-website)
+- [Run the Project Locally](#run-the-project-locally)
+- [Make Changes to the Project](#make-changes-to-the-project)
 
-### `npm start`
+## Technologies
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Tech Stack**: React, HTML, CSS, Firebase, and Bootstrap
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Deploy the Website
 
-### `npm test`
+1. **Log in to Netlify**: Access your Netlify account.
+2. **Navigate to the Netlify Dashboard**: Once logged in, go to your dashboard.
+3. **Add a New Site**: Click on "Add New Site". If you haven't deployed a website on Netlify before, click "Import from Git".
+4. **Connect to the GitHub Repository**: Link your GitHub repository to Netlify.
+5. **Select the Main Branch**: Choose the main branch for deployment.
+6. **Enable Automatic Deploys**: Ensure that automatic deploys are enabled for the **main** branch. This will automatically push changes to the deployment site when the main branch is updated.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Run the Project Locally
 
-### `npm run build`
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/tedx-uofw/tedxuofw-website.git
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. **Download All Modules**:
+   ```bash
+   cd tedx-uofw
+   npm install
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. **Start the Project**:
+   ```bash
+   npm run start
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Make Changes to the Project
 
-### `npm run eject`
+1. **Create an Issue in GitHub**:
+   - Navigate to the **Issues** tab in your GitHub repository.
+   - Click on **New Issue**.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+     ![Step 1a](readme/step1a.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   - Provide a **descriptive title** for the issue (be as specific as possible).
+   - Add relevant details in the description (steps to reproduce, context, expected behavior, etc.).
+   - Click **Submit New Issue** to create the issue.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+     ![Step 1b](readme/step1b.png)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. **Create a Branch for the Issue**:
+   - Use the link within the issue on the right panel under Development that says "Create a branch" for this issue. Develop within that branch until ready to make a PR.
+   - On GitHub:
 
-## Learn More
+     ![Step 2](readme/step2.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   - In your code editor:
+     - Navigate to the `tedxuofw-website` directory.
+     - Switch to the branch you created:
+       ```bash
+       git checkout <branch-name>
+       ```
+   - Make your code changes.
+   - Commit the changes:
+     ```bash
+     git add .
+     git commit -m "Description of changes"
+     git status
+     ```
+     - Ensure you are on the correct branch.
+     ```bash
+     git push
+     ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. **Create a Pull Request (PR)**:
+   - Once the changes are pushed to the branch, go to the **Branches** section in GitHub.
+   - Click on **New Pull Request**.
 
-### Code Splitting
+     ![Step 3a](readme/step3a.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   - Select the branch you created and compare it with the **main** branch.
+   - Add **2 reviewers** for approval.
 
-### Analyzing the Bundle Size
+     ![Step 3b](readme/step3b.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+   - Click **Create Pull Request** to submit the PR.
 
-### Making a Progressive Web App
+4. **Update Your Branch if Needed**:
+   - If changes to the **main** branch have occurred before completing your PR, update your current branch:
+     ```bash
+     git pull origin main
+     ```
+   - Resolve any conflicts that arise and push the merge:
+     ```bash
+     git push
+     ```
+   - If someone requests changes, address them and push the updates. Request re-approval.
+   - Once you receive 2 approvals and your branch is up-to-date with **main**, merge the pull request with **main**.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+5. **Sync Your Branch with Main if Needed**:
+   - If the **main** branch has been updated before your PR is complete, update your branch:
+     ```bash
+     git pull origin main
+     ```
+   - Resolve any conflicts that arise and push the merge:
+     ```bash
+     git push
+     ```
