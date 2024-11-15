@@ -130,7 +130,7 @@
   #nav-content-side {
     display: flex;
     width: 0%;
-    padding: 2rem 0rem 6.25rem 10rem; 
+    padding: 2rem 0rem 0rem 10rem; 
     justify-content: flex-start;
   }
   
@@ -209,6 +209,7 @@
 @media only screen and (max-width: 500px) {
   #nav-right-side {
     margin-left: 4%;
+    justify-content: flex-end;
   }
 
   #nav-right-side a {
