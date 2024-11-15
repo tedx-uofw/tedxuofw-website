@@ -1,74 +1,116 @@
-# 💥 TEDxUofW 💥
-TEDxUofW is a student-run club at the University of Washington in Seattle, Washington. Each year, our dedicated club members organize an annual event that brings professionals from various industries to the university to share their stories, insights, and expertise. This is the github of our main website.
+# TEDxUofW Main Website
+
+![Main Image](readme/main.png)
+
+TEDxUofW is a student-run club at the University of Washington in Seattle, Washington. Each year, our dedicated club members organize an annual event that brings professionals from various industries to the university to share their stories, insights, and expertise. This is the GitHub repository for our main website.
 
 ## Table of Contents
+
 - [Technologies](#technologies)
-- [Deploy a website](#deployment)
-- [Running] (#running)
-- [Make changes to the Project](#changes)
+- [Deploy the Website](#deploy-the-website)
+- [Run the Project Locally](#run-the-project-locally)
+- [Make Changes to the Project](#make-changes-to-the-project)
 
 ## Technologies
+
 - **Tech Stack**: React, HTML, CSS, Firebase, and Bootstrap
 
-## Deploy a website
-1. Login to Netlify
-2. Go to Netlify dashboard
-3. Click on "Add New Site" or If never deploy a website on Netlify a website before then click "Import from Git"
-4. Connect to the Github repository
-5. Select the main branch
-6. Make sure automatic deploys are turned on for **main** branch (Will be automatically push changes to the deployment site when the main branch changes)
+## Deploy the Website
 
-## Running
-1. Clone the repository:
-   - git clone https://github.com/tedx-uofw/tedxuofw-website.git
-2. Dowload all the modules:
-   - cd tedx-uofw
-   - npm install
-3. Start the project:
-   - npm run start 
+1. **Log in to Netlify**: Access your Netlify account.
+2. **Navigate to the Netlify Dashboard**: Once logged in, go to your dashboard.
+3. **Add a New Site**: Click on "Add New Site". If you haven't deployed a website on Netlify before, click "Import from Git".
+4. **Connect to the GitHub Repository**: Link your GitHub repository to Netlify.
+5. **Select the Main Branch**: Choose the main branch for deployment.
+6. **Enable Automatic Deploys**: Ensure that automatic deploys are enabled for the **main** branch. This will automatically push changes to the deployment site when the main branch is updated.
 
-## Make changes to the Project
-1. Create an Issue in GitHub
+## Run the Project Locally
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/tedx-uofw/tedxuofw-website.git
+   ```
+
+2. **Download All Modules**:
+   ```bash
+   cd tedx-uofw
+   npm install
+   ```
+
+3. **Start the Project**:
+   ```bash
+   npm run start
+   ```
+
+## Make Changes to the Project
+
+1. **Create an Issue in GitHub**:
    - Navigate to the **Issues** tab in your GitHub repository.
    - Click on **New Issue**.
-      - <img src="/readme/step1a.png" alt="Step 1a" width="300">
+
+     ![Step 1a](readme/step1a.png)
+
    - Provide a **descriptive title** for the issue (be as specific as possible).
    - Add relevant details in the description (steps to reproduce, context, expected behavior, etc.).
    - Click **Submit New Issue** to create the issue.
-      - <img src="/readme/step1b.png" alt="Step 1b" width="300">
-2. Create a Branch for that issue (there's a link within the issue on the right panel under Development which says "Create a branch" for this issue).Develop within that branch until ready to make a PR.
-   - On github:
-      - <img src="/readme/step2.png" alt="Step 2" width="300">
-   - After direct to your code editor:
-      - Go into tedxuofw-website directory
-      - Direct to the branch you created:
-         - Navigate to the terminal
-         - git checkout (name of the branch you want to go into)
-   - Code
+
+     ![Step 1b](readme/step1b.png)
+
+2. **Create a Branch for the Issue**:
+   - Use the link within the issue on the right panel under Development that says "Create a branch" for this issue. Develop within that branch until ready to make a PR.
+   - On GitHub:
+
+     ![Step 2](readme/step2.png)
+
+   - In your code editor:
+     - Navigate to the `tedxuofw-website` directory.
+     - Switch to the branch you created:
+       ```bash
+       git checkout <branch-name>
+       ```
+   - Make your code changes.
    - Commit the changes:
-      - Navigate to the terminal
-      - git add .
-      - git commit -m "(message about the changes you made)"
-      - git status 
-         - Make sure you are on the right branch
-      - git push 
-4. Create a Pull Request (PR)
+     ```bash
+     git add .
+     git commit -m "Description of changes"
+     git status
+     ```
+     - Ensure you are on the correct branch.
+     ```bash
+     git push
+     ```
+
+3. **Create a Pull Request (PR)**:
    - Once the changes are pushed to the branch, go to the **Branches** section in GitHub.
    - Click on **New Pull Request**.
-      - <img src="/readme/step3a.png" alt="Step 3a" width="300">
+
+     ![Step 3a](readme/step3a.png)
+
    - Select the branch you created and compare it with the **main** branch.
    - Add **2 reviewers** for approval.
-      - <img src="/readme/step3b.png" alt="Step 3b" width="300">
+
+     ![Step 3b](readme/step3b.png)
+
    - Click **Create Pull Request** to submit the PR.
-4. If changes to Main have recently happened before completing your PR, update your current branch by running "git pull origin main" in branch, then push the merge from main to branch.
-   - 4b. If someone makes a Request for changes, address the changes and push them. Ask for re-approval
-   - Once you get 2 approvals and your branch is up-to-date with main, Merge Pull Request with main.
-5. Sync Your Branch with Main if Needed
-   - If the **main** branch has been updated before your PR is complete, you need to update your branch:
-      - git pull origin main
+
+4. **Update Your Branch if Needed**:
+   - If changes to the **main** branch have occurred before completing your PR, update your current branch:
+     ```bash
+     git pull origin main
+     ```
    - Resolve any conflicts that arise and push the merge:
-      - git push
+     ```bash
+     git push
+     ```
+   - If someone requests changes, address them and push the updates. Request re-approval.
+   - Once you receive 2 approvals and your branch is up-to-date with **main**, merge the pull request with **main**.
 
-
-
-
+5. **Sync Your Branch with Main if Needed**:
+   - If the **main** branch has been updated before your PR is complete, update your branch:
+     ```bash
+     git pull origin main
+     ```
+   - Resolve any conflicts that arise and push the merge:
+     ```bash
+     git push
+     ```
