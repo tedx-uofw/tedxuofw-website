@@ -4,6 +4,8 @@
   gap: 12px;
   padding-top: 12.5vw;
   padding-bottom: 8.333vw;
+  position: relative;
+  z-index: 1;
 }
 
 .past-events-title {
@@ -12,6 +14,7 @@
   justify-content: space-between;
   align-items: center;
   align-self: stretch;
+  padding-top: 60px; /* Ensure enough space for the nav bar */
 }
 
 .past-events-hr {
@@ -71,9 +74,14 @@
   .mobile-dropdown {
     display: flex;
     padding-bottom: 24px;
+    z-index: 2; 
   }
 
   .desktop-dropdown {
     display: none;
+  }
+
+  .past-events-title {
+    padding-top: 80px; 
   }
 }
