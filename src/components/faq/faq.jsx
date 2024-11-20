@@ -45,7 +45,7 @@ const Faq = () => {
         <meta name="keywords" content="TEDxUofW, tedxuofw, tedx, ted, Tedx, Ted, uw, University of Washington, ted talks, tedx talk, tedx conference, uw rso, join the team, nominate a speaker, ideas worth spreading, general frequently asked questions, speaker frequently asked questions, sponsor frequently asked questions, speaker applications, volunteer, questions, where, what"/>
       </Helmet>
 
-      <div className="faq-header hide-faq-title">
+      <div className="faq-header">
         <h1>Frequently Asked Questions</h1>
       </div>
 

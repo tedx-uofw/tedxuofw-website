@@ -26,7 +26,8 @@
 
 .faq-header h1 {
     /* font-size: 64px; */
-    font-size: 50px;
+    /* font-size: 50px; */
+    font-size: 4rem;
     font-weight: 600;
 }
 
@@ -189,13 +190,21 @@
 
 /* tablet */
 @media only screen and (max-width: 1024px) {
-    .hide-faq-title {
-        display: none;
+
+    /* consistent with pastevents.css */
+    .faq-header h1 {
+        padding-top: 60px;
+        font-size: 32px;
+    }
+
+    .faq-header {
+        text-align: left;
     }
 
     .genFaq {
         /* padding-top: 131px; */
-        padding-top: 200px;
+        /* padding-top: 200px; */
+        padding-top: 0px;
     }
 
     #faq h2 {
