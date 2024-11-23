@@ -20,7 +20,6 @@
 
 #logo {
   padding: 5rem 6.25rem 5rem 6.25rem;
-
 }
 
 #nav-left img {
@@ -32,6 +31,10 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+#nav-right-side { 
+  padding: 10% 10% 10% 10%;
 }
 
 #nav-right a {
@@ -60,10 +63,6 @@
 }
 
 #side-menu-icon-clicked {
-  display: none;
-}
-
-#half-bg {
   display: none;
 }
 
@@ -96,7 +95,6 @@
     display: flex;
     flex-direction: column-reverse;
     z-index: 1;
-    margin-left: 23%;
   }
 
   #nav-right-side a {
@@ -109,11 +107,6 @@
     text-decoration: none;
     padding-bottom: 1.3rem;
     padding-top: 1.3rem;
-  }
-
-  #navbar {
-    margin-left: -7rem;
-    margin-right: -2rem;
   }
 
   #navbar-with-side-menu {
@@ -129,45 +122,46 @@
 
   #nav-content-side {
     display: flex;
+    justify-content: space-between;
     width: 100%;
-    padding: 2rem 0rem 6.25rem 3rem;
+    padding-top: 6%;
   }
 
   #nav-content {
     padding: 3rem 0rem 6.25rem 0rem;
     width: 86%;;
+    justify-content: space-between;
   }
 
   #nav-left img {
-    height: 2.86275rem;
+    height: 2.86275rem; 
   }
 
   #half-bg-side {
-    width: 30%;
+    width: 60%;
     height: 100vh;
     background: linear-gradient(180deg, #101010 27.24%, rgba(16, 16, 16, 0.00) 87.15%);
     position: fixed;
-    padding: 30%;
     right: 0;
     top: 0;
   }
 
-  #half-bg-other-side {
+  #blacked-out-bg {
     left: 0;
     top: 0;
     height: 100vh;
     position: fixed;
     background-color: rgba(0, 0, 0, 0.34);
-    padding: 30%;
     width: 100vw;
   }
 
   #nav-button-row {
     display: flex;
     justify-content: space-between;
-    width: 44vw;
     align-items: center;
     padding-bottom: 1.3rem;
+    padding-right: 0%;
+    padding-left: 0%;
   }
 
   #nav-right-side #buttons button{
@@ -179,47 +173,19 @@
   }
 }
 
-@media only screen and (max-width: 830px) {
-  #nav-right-side {
-    margin-left: 17%;
-  }
-}
-
 @media only screen and (max-width: 700px) {
-  #nav-right-side {
-    margin-left: 12%;
-  }
-
   #nav-left img {
     width: 90%;
-  }
-
-  #half-bg-side {
-    padding: 28%;
-  }
-}
-
-@media only screen and (max-width: 580px) {
-  #nav-right-side {
-    margin-left: 6%;
   }
 }
 
 @media only screen and (max-width: 500px) {
-  #nav-right-side {
-    margin-left: 4%;
-  }
-
   #nav-right-side a {
     font-size: 0.875rem;
   }
 
   #nav-right-side #buttons button{
     font-size: 0.875rem;
-  }
-
-  #half-bg-side {
-    padding: 25%;
   }
 }
 
