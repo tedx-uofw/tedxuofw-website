@@ -13,6 +13,8 @@ import FAQ from "./components/faq/faq"
 import Admin from './components/admin/Admin';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Checkout from './components/checkout/checkout';
+import Success from './components/checkout/success';
 
 function App() {
 
@@ -27,6 +29,8 @@ function App() {
               <Route path="/contact" element = { <Contact /> } />
               <Route path="/past-events" element = { <PastEvents /> } />
               <Route path="/faq" element = { <FAQ /> } />
+              <Route path='/checkout' element = {<Checkout/>}/>
+              <Route path='/success' element = {<Success/>}/>
               <Route path="*" element={<div> 404 Not Found </div>}></Route>
               {/* <Route path="/admin" element={ <Admin /> }></Route> */}
             </Routes>
