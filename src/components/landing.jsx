@@ -26,16 +26,26 @@ const landing = () => {
       </Helmet>
 
       <div id='tedx-intro'>
+        <video 
+          className="background-video"
+          src='https://firebasestorage.googleapis.com/v0/b/tedxuofw-1de88.appspot.com/o/Repo%20Website%2FLanding%2Ftemp-landing%2FResonance_Video.mp4?alt=media&token=3f4e9b97-fe80-4308-b7cf-28a58d66eb11'
+          autoPlay
+          muted
+          loop
+          playsInline
+        />
         <div id='intro-top'>
-        <h1>WE ARE</h1>
           <div id='intro-bottom'>
-            <img src='https://firebasestorage.googleapis.com/v0/b/tedxuofw-1de88.appspot.com/o/Repo%20Website%2FLanding%2Ftedx-logo.png?alt=media&token=bdf7235f-f733-4a29-997f-53c05df1e985' alt='tedx-logo'/>
+            <div>
+              <h1>RESONANCE 2025</h1>
+              <img src='https://firebasestorage.googleapis.com/v0/b/tedxuofw-1de88.appspot.com/o/Repo%20Website%2FLanding%2Ftedx-logo.png?alt=media&token=bdf7235f-f733-4a29-997f-53c05df1e985' alt='tedx-logo'/>
+            </div>
             <section id='landing-about'>
-              <p>TEDxUofW was established to bring inspirational and informative TED style talks to the University of Washington.</p>
-              <p>Since 2012, our student-run organization has sought to give amazing speakers a receptive audience to share their passions with.</p>
+              {/* <p>The way a single action, idea, or event emerges and continues to echo over time, creating waves that extend far beyond the initial moment.</p> */}
+              <p>Learn how the essence of a single moment can contribute to a larger, lasting legacy that connects people and ideas across time and space.</p>
               <Button
-                title='ABOUT US'
-                link='./about/about.jsx'
+                title='VISIT RESONANCE 2025'
+                link='https://resonance.tedxatuofw.com'
               />
             </section>
           </div>
@@ -81,7 +91,7 @@ const landing = () => {
             name='DO YOU HAVE A MINUTE?'
             details='April 56, 1983 , 6AM-10PM | Kane Hall 301'
             description='fun descriptor text about how amazing this conference is and oh
-              my gosh it’s going to be so great guys im so tired i just finished work and honestly i
+              my gosh it&apos;s going to be so great guys im so tired i just finished work and honestly i
               just want to sleep but i have so much work to do rahhhhhhhh also the image will probably
               hold the conference promo or branding somewhere'
             image='https://firebasestorage.googleapis.com/v0/b/tedxuofw-1de88.appspot.com/o/Event%20Banners%2FupcomingEvent1.png?alt=media&token=3f07daee-32a7-44fd-a519-c30425e8ddb5'

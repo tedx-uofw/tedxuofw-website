@@ -79,7 +79,7 @@ const Navbar = () => {
           <section id='nav-button-row'>
             <Button
                 title='BUY TICKETS'
-                link=''
+                link='https://docs.google.com/forms/d/e/1FAIpQLSc0u-Lo0mPZioUITqURZVAg2ys_2FKB3ZWOwY1yqz45PSlElQ/viewform'
             />
             <img id={isClicked ? 'exit-button':'exit-btn'} src={exit} onClick={() => {setClick(true)}} alt="exit-button"/>
           </section>
