@@ -6,7 +6,8 @@ import tedxuofw_logo from '../../assets/tedx-logo.png'
 import tedx_logo from '../../assets/tedx.png'
 import ted_logo from '../../assets/ted.png'
 import tedxuofw from '../../assets/tedxuofw.png'
-import ro from '../../assets/ro 1.svg'
+import ro from '../../assets/speakerCoaches/ro.webp'
+import kimberly from '../../assets/speakerCoaches/kimberly.webp'
 import { Helmet } from "react-helmet";
 
 const about = () => {
@@ -141,6 +142,27 @@ const about = () => {
 
         <div id="ro-img" class="about-col">
           <img src = {ro}/>
+        </div>
+      </div>
+
+      {/* Kimberly */}
+      <div id="ro" class="about-row">
+        <div class="about-col">
+            <h1>Kimberly Colburn</h1>
+            <div class="bar">
+              <p>Special thanks to Kimberly Colburn—a theatre producer & story editor, 
+              and speaker coach—who runs Protagonist Events, specializing in fun & 
+              facilitation via professional development workshops and team-building games. 
+              Contact Protagonist now to become the hero of your own story! <a href="https://www.protagonist-events.com">protagonist-events.com</a></p>
+              <Button 
+                title = 'LINKEDIN' 
+                link = 'https://www.linkedin.com/in/kimberly-colburn-1ba7398/'
+              />    
+            </div>
+        </div>
+
+        <div id="ro-img" class="about-col ">
+          <img src = {kimberly}/>
         </div>
       </div>
     </div>
