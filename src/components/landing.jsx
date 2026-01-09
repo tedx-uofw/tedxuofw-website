@@ -103,10 +103,10 @@ const landing = () => {
           <h1>HIGHLIGHTED TALKS</h1>
           <div id='talk-videos'>
             <section className='video-info-pair'>
-              <iframe title='bobatalks' src='https://www.youtube.com/embed/xDMO1d6gaWU?si=Tgeo992W_MKo-Tdu'></iframe>
+              <iframe title='How to support someone without having the solution' src='https://www.youtube.com/embed/EbNAXpCnjTg'></iframe>
               <section>
-                <p>JEFF NQUYEN</p>
-                <p>Why your career needs a North Star</p>
+                <p>NASH FUNG</p>
+                <p>How to support someone without having the solution</p>
               </section>
             </section>
 
