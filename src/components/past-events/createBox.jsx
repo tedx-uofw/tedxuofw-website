@@ -14,12 +14,16 @@ const CreateBox = (props) => {
                 <div className='name-socials-box'>
                     <h3 className='name-content'>{props.name}</h3>
                     <div className='socials-box'>
-                        <a target='_blank' href={props.youtubeLink} className='social-link'>
-                            <img src={youtube}/>
-                        </a>
-                        <a target='_blank' href={props.linkedinLink} className='social-link'>
-                            <img src={linkedin}/>
-                        </a>
+                        {props.youtubeLink && (
+                            <a target='_blank' href={props.youtubeLink} className='social-link'>
+                                <img src={youtube}/>
+                            </a>
+                        )}
+                        {props.linkedinLink && (
+                            <a target='_blank' href={props.linkedinLink} className='social-link'>
+                                <img src={linkedin}/>
+                            </a>
+                        )}
                     </div>
 
                 </div>

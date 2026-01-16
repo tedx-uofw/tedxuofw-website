@@ -6,6 +6,8 @@ import Dropdown from './DropdownComp'
 import CreateBox from './createBox'
 import Event from '../event-component/event'
 import resonanceBanner from '../../assets/resonance-banner.png'
+import ddcImage from '../../assets/DDC--9.jpg'
+import acapellaImage from '../../assets/acapella.png'
 
 import { getDocs, collection } from 'firebase/firestore'
 import { db } from '../../firebase'
@@ -91,14 +93,15 @@ const PastEvents = () => {
         },
         {
           name: "Developpe Dance Club at UW",
-          description: "Developpe Dance Club brings together those who love ballet and contemporary dance at UW. The club welcomes dancers of all levels and focuses on building a supportive, inclusive dance community. Weekly ballet and contemporary classes are offered at both beginner and advanced levels, taught by the club’s teaching team. Developpe also hosts special classes, community events, and an end-of-year public performance where members can choreograph and perform. Follow @developpedanceclub on Instagram for event details and how to join.", // To be added later
-          imgUrl: "", // To be added later
+          description: "Developpe Dance Club brings together those who love ballet and contemporary dance at UW. The club welcomes dancers of all levels and focuses on building a supportive, inclusive dance community. Weekly ballet and contemporary classes are offered at both beginner and advanced levels, taught by the club's teaching team. Developpe also hosts special classes, community events, and an end-of-year public performance where members can choreograph and perform. Follow @developpedanceclub on Instagram for event details and how to join.",
+          imgUrl: ddcImage
         },
         {
           name: "Furmata Acapella at UW",
-          description: "Furmata is a UW a cappella group dedicated to bringing musicians together through high-caliber vocal music. The group performs a wide range of genres—from R&B and pop to jazz and musical theater—at concerts, competitions, and festivals including ICCA. Beyond campus, Furmata gigs throughout the PNW and creates projects such as albums and music videos. Follow them on social media or reach out at furmata@uw.edu with any questions!", // To be added later
-          imgUrl: "", // To be added later
+          description: "Furmata is a UW a cappella group dedicated to bringing musicians together through high-caliber vocal music. The group performs a wide range of genres—from R&B and pop to jazz and musical theater—at concerts, competitions, and festivals including ICCA. Beyond campus, Furmata gigs throughout the PNW and creates projects such as albums and music videos. Follow them on social media or reach out at furmata@uw.edu with any questions!",
+          imgUrl: acapellaImage,
           youtubeUrl: "https://youtu.be/ViXn0g5lMug?si=H-OX3nv0uoU9o6OC",
+          linkedinUrl: ""
         }
       ]
     }
