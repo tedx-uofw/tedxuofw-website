@@ -6,7 +6,7 @@ import Dropdown from './DropdownComp'
 import CreateBox from './createBox'
 import Event from '../event-component/event'
 import resonanceBanner from '../../assets/resonance-banner.png'
-import ddcImage from '../../assets/DDC--9.jpg'
+import ddcImage from '../../assets/DDC-compressed.jpg'
 import acapellaImage from '../../assets/acapella.png'
 
 import { getDocs, collection } from 'firebase/firestore'
