@@ -13,7 +13,7 @@ import { getDocs, collection } from 'firebase/firestore'
 import { db } from '../../firebase'
 
 const PastEvents = () => {
-
+  //
   const [items, setItems] = useState([]);
   const [selectedYear, setSelectedYear] = useState({})
 
