@@ -183,17 +183,25 @@
 
 #team-card {
   display: flex;
+  flex-direction: row;
   max-width: 91.875rem;
   align-items: center;
   gap: 2.5rem;
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
 }
 
 #team-card img {
-  width: 64.04331rem;
-  height: 34.35113rem;
+  flex: 1 1 50%;
+  width: 100%;
+  height: auto;
+  max-height: 34.35113rem;
+  object-fit: cover;
 }
 
 #team-card-right {
+  flex: 1 1 50%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -388,6 +396,25 @@
     margin-top: 1rem;
   }
 
+}
+
+/* Responsive breakpoints for team card */
+@media (max-width: 768px) {
+  #team-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #team-card img,
+  #team-card-right {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+
+  #team-card-right {
+    align-items: center;
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 375px) {

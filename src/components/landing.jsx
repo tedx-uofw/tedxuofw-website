@@ -140,7 +140,7 @@ const landing = () => {
               be notified when they reopen, typically in the first few weeks of fall quarter. </p>
               <Button
                 title='JOIN THE TEAM'
-                link=''
+                link='https://www.instagram.com/tedxuofw/'
               />
             </section>
           </div>
