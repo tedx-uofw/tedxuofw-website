@@ -24,14 +24,14 @@
     font-size: 2.083vw;
     font-style: normal;
     font-weight: 600;
-    line-height: normal;
+    /* line-height: normal; */
   }
 
   .talk-title-content {
     font-size: 1.25vw;
     font-style: normal;
     font-weight: 500;
-    line-height: normal;
+    /* line-height: normal; */
   }
 
   .name-socials-box {

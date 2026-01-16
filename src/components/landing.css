@@ -67,7 +67,7 @@
 #tedx-intro h1, #landing-about p, .video-info-pair p, #team-card-right p {
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  /* line-height: normal; */
 }
 
 /********************** Section below belongs to the down arrow ********************/
@@ -110,7 +110,7 @@
   font-size: 2.5rem;
   font-style: normal;
   font-weight: 500;
-  line-height: normal;
+  /* line-height: normal; */
 }
 
 #upcoming-events, #impact, #highlighted-talks, #join-our-team {
@@ -139,7 +139,7 @@
 .impact-number-pair h2, p {
   font-style: normal;
   font-weight: 600;
-  line-height: normal;
+  /* line-height: normal; */
 }
 
 .impact-number-pair p {

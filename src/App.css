@@ -2,21 +2,23 @@ html,
 body,
 #root,
 .App {
-    margin: 0;
-    font-family: "Plus Jakarta Sans";
+  margin: 0;
+  font-family: "Plus Jakarta Sans";
+}
+
+* {
+  line-height: 1.5 !important;
 }
 
 .App {
-    background-size: cover;
-    background-color: #101010;
-    color: #FFFAFA;;
-    padding-left: 11.719vw;
-    padding-right: 11.719vw;
-    /* padding-top: 20rem; */
-    overflow-x: hidden;
-
+  background-size: cover;
+  background-color: #101010;
+  color: #fffafa;
+  padding-left: 11.719vw;
+  padding-right: 11.719vw;
+  /* padding-top: 20rem; */
+  overflow-x: hidden;
 }
-
 
 /* @media only screen and (max-width: 1024px) {
     .App {

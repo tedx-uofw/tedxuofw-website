@@ -41,7 +41,7 @@
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  /* line-height: normal; */
   text-decoration: none;
   margin-left: 3.75rem;
 }
@@ -105,7 +105,7 @@
     font-size: 1.5rem;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
+    /* line-height: normal; */
     text-decoration: none;
     padding-bottom: 1.3rem;
     padding-top: 1.3rem;

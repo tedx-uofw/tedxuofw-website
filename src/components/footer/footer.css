@@ -28,7 +28,7 @@
   /* Regular 20 */
   font-family: Poppins;
   font-style: normal;
-  line-height: normal;
+  /* line-height: normal; */
   margin: 0;
   gap: 2rem;
 }
@@ -56,7 +56,7 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  /* line-height: normal; */
 }
 
 #pages .footer-row {
@@ -78,7 +78,7 @@
   /* Regular 20 */
   font-family: Poppins;
   font-style: normal;
-  line-height: normal;
+  /* line-height: normal; */
 }
 
 #copyright {
@@ -87,7 +87,7 @@
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  /* line-height: normal; */
   margin-bottom: 0rem;
 }
 
