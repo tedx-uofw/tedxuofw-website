@@ -43,11 +43,14 @@
   font-size: 1.25rem;
 }
 
-#event-description, #event-details, #event-name, #event-info button {
+#event-description,
+#event-details,
+#event-name,
+#event-info button {
   font-style: normal;
   font-weight: 400;
   /* line-height: normal; */
-  color: #FFFAFA;
+  color: #fffafa;
 }
 
 #event-header {
@@ -62,7 +65,6 @@
   margin-top: auto;
   margin-bottom: auto;
 }
-
 
 @media only screen and (max-width: 1530px) {
   .event-img {
@@ -94,7 +96,8 @@
 }
 
 @media only screen and (max-width: 575px) {
-  #event-description, #event-details {
+  #event-description,
+  #event-details {
     font-size: 1rem;
   }
 
@@ -109,7 +112,8 @@
 }
 
 @media only screen and (max-width: 375px) {
-  #event-description, #event-details {
+  #event-description,
+  #event-details {
     font-size: 0.875rem;
   }
 

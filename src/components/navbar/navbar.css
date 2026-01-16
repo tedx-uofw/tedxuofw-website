@@ -2,7 +2,11 @@
   width: 100vw;
   display: flex;
   justify-content: center;
-  background: linear-gradient(180deg, #101010 27.24%, rgba(16, 16, 16, 0.00) 87.15%);
+  background: linear-gradient(
+    180deg,
+    #101010 27.24%,
+    rgba(16, 16, 16, 0) 87.15%
+  );
   position: fixed;
   overflow: hidden;
   transition: top 0.3s;
@@ -20,7 +24,6 @@
 
 #logo {
   padding: 5rem 6.25rem 5rem 6.25rem;
-
 }
 
 #nav-left img {
@@ -35,7 +38,7 @@
 }
 
 #nav-right a {
-  color: #FFFAFA;
+  color: #fffafa;
   text-align: center;
   font-family: "Plus Jakarta Sans";
   font-size: 1rem;
@@ -47,7 +50,7 @@
 }
 
 #nav-right a:hover {
-  color: #FF2B06;
+  color: #ff2b06;
   transition: 0.5s;
 }
 
@@ -100,7 +103,7 @@
   }
 
   #nav-right-side a {
-    color: #FFFAFA;
+    color: #fffafa;
     font-family: "Plus Jakarta Sans";
     font-size: 1.5rem;
     font-style: normal;
@@ -135,7 +138,7 @@
 
   #nav-content {
     padding: 3rem 0rem 6.25rem 0rem;
-    width: 86%;;
+    width: 86%;
   }
 
   #nav-left img {
@@ -145,7 +148,11 @@
   #half-bg-side {
     width: 30%;
     height: 100vh;
-    background: linear-gradient(180deg, #101010 27.24%, rgba(16, 16, 16, 0.00) 87.15%);
+    background: linear-gradient(
+      180deg,
+      #101010 27.24%,
+      rgba(16, 16, 16, 0) 87.15%
+    );
     position: fixed;
     padding: 30%;
     right: 0;
@@ -170,7 +177,7 @@
     padding-bottom: 1.3rem;
   }
 
-  #nav-right-side #buttons button{
+  #nav-right-side #buttons button {
     font-size: 1.5rem;
   }
 
@@ -214,7 +221,7 @@
     font-size: 0.875rem;
   }
 
-  #nav-right-side #buttons button{
+  #nav-right-side #buttons button {
     font-size: 0.875rem;
   }
 
@@ -229,4 +236,3 @@
     margin-right: -2rem;
   }
 }
-

@@ -1,125 +1,120 @@
 #create-box {
-    width: 34.792vw;
+  width: 34.792vw;
 }
 
 .box-description {
-    color: #A9A9A9;
+  color: #a9a9a9;
 }
 
 .box-img {
-    width: 34.792vw;
-    height: 34.792vw;
-    flex-shrink: 0;
-    object-fit: cover;
-    padding-bottom: 20px;
-
+  width: 34.792vw;
+  height: 34.792vw;
+  flex-shrink: 0;
+  object-fit: cover;
+  padding-bottom: 20px;
 }
 
 .title-content {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .name-content {
-    font-size: 2.083vw;
-    font-style: normal;
-    font-weight: 600;
-    /* line-height: normal; */
-  }
+  font-size: 2.083vw;
+  font-style: normal;
+  font-weight: 600;
+  /* line-height: normal; */
+}
 
-  .talk-title-content {
-    font-size: 1.25vw;
-    font-style: normal;
-    font-weight: 500;
-    /* line-height: normal; */
-  }
+.talk-title-content {
+  font-size: 1.25vw;
+  font-style: normal;
+  font-weight: 500;
+  /* line-height: normal; */
+}
 
-  .name-socials-box {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    align-self: stretch;
-  }
+.name-socials-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
 
-  .socials-box {
-    display: flex;
-    flex-direction: row;
-    gap: 1.042vw;
-    justify-content: flex-start;
-  }
+.socials-box {
+  display: flex;
+  flex-direction: row;
+  gap: 1.042vw;
+  justify-content: flex-start;
+}
 
-  .box-hr {
-    margin-top: 0.75rem;
-    margin-bottom: 0.75rem;
-  }
+.box-hr {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
 
-  @media only screen and (max-width: 1024px) {
-    #create-box {
-      width: 528px;
-      padding-bottom: 40px;
+@media only screen and (max-width: 1024px) {
+  #create-box {
+    width: 528px;
+    padding-bottom: 40px;
   }
 
   .box-img {
-      width: 528px;
-      height: 528px;
-      padding-bottom: 20px;
-
+    width: 528px;
+    height: 528px;
+    padding-bottom: 20px;
   }
 
   .box-description {
     font-size: 16px;
-}
-
-  .name-content {
-      font-size: 24px;
-    }
-
-    .talk-title-content {
-      font-size: 20px;
-    }
-
-    .name-socials-box {
-      flex-direction: row;
-      align-items: flex-start;
-    }
   }
 
-  @media only screen and (max-width: 450px) {
-    #create-box {
-      width: 335px;
+  .name-content {
+    font-size: 24px;
+  }
 
+  .talk-title-content {
+    font-size: 20px;
+  }
+
+  .name-socials-box {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  #create-box {
+    width: 335px;
   }
 
   .box-img {
-      width: 100%;
-      height: 335px;
-      padding-bottom: 20px;
-
+    width: 100%;
+    height: 335px;
+    padding-bottom: 20px;
   }
 
   .name-content {
-      font-size: 20px;
-    }
-
-    .talk-title-content {
-      font-size: 16px;
-      margin-bottom: 0rem;
-    }
-
-    .box-description {
-      font-size: 14px;
-    }
-
-    .name-socials-box {
-      flex-direction: row;
-      align-items: flex-start;
-    }
-
-    .social-link > img{
-      width: 24px;
-      height: 24px;
-      flex-shrink: 0;
-    }
+    font-size: 20px;
   }
 
+  .talk-title-content {
+    font-size: 16px;
+    margin-bottom: 0rem;
+  }
+
+  .box-description {
+    font-size: 14px;
+  }
+
+  .name-socials-box {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .social-link > img {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+  }
+}

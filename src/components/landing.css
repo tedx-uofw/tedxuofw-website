@@ -1,10 +1,10 @@
 #landing {
-  color: #FFFAFA;
+  color: #fffafa;
   font-family: "Plus Jakarta Sans";
   display: flex;
   flex-direction: column;
   padding-top: 0px;
-  align-items: center
+  align-items: center;
 }
 
 #tedx-intro {
@@ -56,7 +56,8 @@
   width: 42.292vw;
 }
 
-#tedx-intro h1, .impact-number-pair h2 {
+#tedx-intro h1,
+.impact-number-pair h2 {
   font-size: 4rem;
 }
 
@@ -64,21 +65,24 @@
   font-size: 1.125rem;
 }
 
-#tedx-intro h1, #landing-about p, .video-info-pair p, #team-card-right p {
+#tedx-intro h1,
+#landing-about p,
+.video-info-pair p,
+#team-card-right p {
   font-style: normal;
   font-weight: 400;
   /* line-height: normal; */
 }
 
 /********************** Section below belongs to the down arrow ********************/
-#down-arrow-container { 
+#down-arrow-container {
   position: relative; /* Prevents hitbox movement */
   width: 4.2rem;
   height: 4.2rem;
-  display: flex; 
+  display: flex;
   align-items: center; /* center arrow vertically */
   justify-content: center; /* center arrow horizontally */
-  cursor: pointer; 
+  cursor: pointer;
 }
 #down-arrow {
   width: 3.4375rem;
@@ -87,12 +91,16 @@
   transition: 0.3s;
   animation: upAndDown 1.5s infinite;
 }
-@keyframes upAndDown { /* Vertical moving animation */
-  0%, 100% {
+@keyframes upAndDown {
+  /* Vertical moving animation */
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-20px); /* Adjust value to control how much it moves */
+    transform: translateY(
+      -20px
+    ); /* Adjust value to control how much it moves */
   }
 }
 /***********************************************************************************/
@@ -113,14 +121,16 @@
   /* line-height: normal; */
 }
 
-#upcoming-events, #impact, #highlighted-talks, #join-our-team {
+#upcoming-events,
+#impact,
+#highlighted-talks,
+#join-our-team {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2.5rem;
   width: 100%;
 }
-
 
 #impact-numbers {
   display: flex;
@@ -136,7 +146,8 @@
   gap: 2.25rem;
 }
 
-.impact-number-pair h2, p {
+.impact-number-pair h2,
+p {
   font-style: normal;
   font-weight: 600;
   /* line-height: normal; */
@@ -148,7 +159,7 @@
 }
 
 #lives-impacted h2 {
-  color: #FF2B06;
+  color: #ff2b06;
 }
 
 #upcoming-events {
@@ -205,7 +216,6 @@
 }
 
 @media only screen and (max-width: 1530px) {
-
   #talk-videos iframe {
     width: 100%;
     height: 16rem;
@@ -257,7 +267,7 @@
     width: 86%;
   }
 
-  #tedx-intro  {
+  #tedx-intro {
     height: 50rem;
   }
 
@@ -266,7 +276,10 @@
     margin-bottom: 10.5rem;
   }
 
-  #upcoming-events, #impact, #highlighted-talks, #join-our-team {
+  #upcoming-events,
+  #impact,
+  #highlighted-talks,
+  #join-our-team {
     width: 100%;
   }
 
@@ -370,7 +383,10 @@
     margin-bottom: 8.5rem;
   }
 
-  #upcoming-events, #impact, #highlighted-talks, #join-our-team {
+  #upcoming-events,
+  #impact,
+  #highlighted-talks,
+  #join-our-team {
     gap: 2rem;
   }
 
@@ -387,11 +403,11 @@
   #intro-bottom h1 {
     margin-top: 1rem;
   }
-
 }
 
 @media only screen and (max-width: 375px) {
-  #landing-about p, .video-info-pair p {
+  #landing-about p,
+  .video-info-pair p {
     font-size: 0.875rem;
   }
 
@@ -420,8 +436,10 @@
     gap: 0.5rem;
   }
 
-  #upcoming-events, #impact, #highlighted-talks, #join-our-team {
+  #upcoming-events,
+  #impact,
+  #highlighted-talks,
+  #join-our-team {
     gap: 1.5rem;
   }
-
 }

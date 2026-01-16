@@ -1,7 +1,7 @@
 #footer {
   justify-content: space-between;
   align-items: flex-start;
-  background: linear-gradient(0deg, #101010 -10.3%, rgba(16, 16, 16, 0.00) 80.52%);
+  background: linear-gradient(0deg, #101010 -10.3%, rgba(16, 16, 16, 0) 80.52%);
   mix-blend-mode: hard-light;
   margin: 0vw -12.5vw;
   padding: 1.667vw 5.208vw;
@@ -51,7 +51,7 @@
   align-items: flex-start;
   gap: 3rem;
 
-  color: #FFFAFA;
+  color: #fffafa;
   font-family: "Plus Jakarta Sans";
   font-size: 16px;
   font-style: normal;
@@ -73,7 +73,7 @@
 
 .section a {
   text-decoration: none;
-  color: var(--White, #FFF);
+  color: var(--White, #fff);
 
   /* Regular 20 */
   font-family: Poppins;
@@ -82,7 +82,7 @@
 }
 
 #copyright {
-  color: #FFFAFA;
+  color: #fffafa;
   font-family: "Plus Jakarta Sans";
   font-size: 20px;
   font-style: normal;
@@ -118,7 +118,8 @@
     align-items: flex-start;
     gap: 2rem;
   }
-  #top, #bottom {
+  #top,
+  #bottom {
     display: block !important;
     padding-bottom: 2rem !important;
   }
@@ -133,7 +134,7 @@
   }
   #pages a {
     padding: 0rem;
-    padding-right: 0.625rem;;
+    padding-right: 0.625rem;
     gap: 1.5rem;
   }
   #copyright {
@@ -152,7 +153,7 @@
 
 @media screen and (min-width: 450px) {
   .mobile-only {
-      display: none;
+    display: none;
   }
 }
 
