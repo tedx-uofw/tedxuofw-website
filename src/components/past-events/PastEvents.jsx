@@ -94,7 +94,7 @@ const PastEvents = () => {
         {
           name: "Developpe Dance Club at UW",
           description: "Developpe Dance Club brings together those who love ballet and contemporary dance at UW. The club welcomes dancers of all levels and focuses on building a supportive, inclusive dance community. Weekly ballet and contemporary classes are offered at both beginner and advanced levels, taught by the club's teaching team. Developpe also hosts special classes, community events, and an end-of-year public performance where members can choreograph and perform. Follow @developpedanceclub on Instagram for event details and how to join.",
-          imgUrl: 
+          imgUrl: ddcImage
         },
         {
           name: "Furmata Acapella at UW",
