@@ -106,7 +106,7 @@ const landing = () => {
               <iframe title='How to support someone without having the solution' src='https://www.youtube.com/embed/EbNAXpCnjTg'></iframe>
               <section>
                 <p>NASH FUNG</p>
-                <p>How to support someone without having the solution</p>
+                <p>2024 TEDxUofW Talk</p>
               </section>
             </section>
 
