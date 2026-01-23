@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect, useRef} from 'react'
 import './navbar.css'
 import Button from '../button/button'
 // import logo from '../../assets/logo.png'
@@ -8,10 +8,41 @@ import tedLogo from '../../assets/tedxuofw.svg'
 const Navbar = () => {
 
   const [isClicked, setClick] = useState(true);
+  const [overlayWidth, setOverlayWidth] = useState(0);
+  const navRightSideRef = useRef(null);
+
+  useEffect(() => {
+    const updateOverlayWidth = () => {
+      if (navRightSideRef.current && !isClicked) {
+        const rect = navRightSideRef.current.getBoundingClientRect();
+        const distanceToRightEdge = window.innerWidth - rect.left;
+        const padding = window.innerWidth * 0.05;
+
+        setOverlayWidth(distanceToRightEdge + padding);
+      } else {
+        setOverlayWidth(0);
+      }
+    };
+
+    // Use multiple delays to catch different rendering scenarios
+    const timer1 = setTimeout(updateOverlayWidth, 10);
+    const timer2 = setTimeout(updateOverlayWidth, 50);
+    const timer3 = setTimeout(updateOverlayWidth, 100);
+    
+    window.addEventListener('resize', updateOverlayWidth);
+
+    return () => {
+      clearTimeout(timer1);
+      clearTimeout(timer2);
+      clearTimeout(timer3);
+      window.removeEventListener('resize', updateOverlayWidth);
+    };
+  }, [isClicked]);
 
   let prevScroll = window.scrollY;
   window.onscroll = function() {
     let scroll = window.scrollY;
+    
     if(document.getElementById("navbar") !== null) {
       if (prevScroll > scroll || scroll <= 0) {
         document.getElementById("navbar").style.top = "0px";
@@ -57,8 +88,8 @@ const Navbar = () => {
   return (
     <div id={isClicked ? "navbar" : "navbar-with-side-menu"}>
     {/* will need to add is-clicked nav-content so it goes back to row orientation */}
-    <section id={isClicked ? "half-bg" : "half-bg-side"}></section>
-    <section id={isClicked ? "half-bg" : "half-bg-other-side"}></section>
+    <section id={isClicked ? "half-bg" : "half-bg-side"} style={{width: !isClicked ? `${overlayWidth}px` : ''}}></section>
+    <section id={isClicked ? "half-bg" : "half-bg-other-side"} style={{width: `${overlayWidth}px`}}></section>
 
       <div id={isClicked ? "nav-content" : "nav-content-side"}>
         <div id='nav-left'>
@@ -71,7 +102,7 @@ const Navbar = () => {
             <path id="Vector 125" d="M41 13.0625H1" stroke="white" stroke-width="1.3" stroke-linecap="square" stroke-linejoin="round"/>
             </g>
           </svg>
-        <div id={isClicked ? 'nav-right':'nav-right-side'}>
+        <div id={isClicked ? 'nav-right':'nav-right-side'} ref={navRightSideRef}>
           <a href='./past-events'>PAST EVENTS</a>
           <a href='./about'>ABOUT</a>
           <a href='./faq'>FAQ</a>
